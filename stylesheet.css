@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('static/Raleway-Regular.ttf');
+}
+
+body { 
+  font-family: 'Raleway';
+  color: black;}
+
+#cannebière {
+  width: 12%;
+  height: 12%;
+}
+
+#port {
+  width: 12%;
+  height: 12%;
+}
+
+#mouettes {
+  width: 12%;
+  height: 12%;
+}
+
+#mer {
+  width: 12%;
+  height: 12%;
+}
+
+#panier {
+  width: 12%;
+  height: 12%;
+}
+
+#amina {
+  width: 12%;
+  height: 12%;
+}
+
+#matin {
+  width: 12%;
+  height: 12%;
+}
+
+#cœur {
+  width: 12%;
+  height: 12%;
+}
+
+#tout_bleu {
+  width: 12%;
+  height: 12%;
+}
+
+#vieux {
+  width: 12%;
+  height: 12%;
+}
+
+#fort {
+  width: 12%;
+  height: 12%;
+}
+
+#friout {
+  width: 12%;
+  height: 12%;
+}
+
+#calanques {
+  width: 12%;
+  height: 12%;
+}
+
+#notre_dame {
+  width: 12%;
+  height: 12%;
+}
+
+#longchamp {
+  width: 12%;
+  height: 12%;
+}
