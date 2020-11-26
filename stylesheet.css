@@ -4,37 +4,118 @@
 }
 
 body { 
+  border: black, 1px;
   font-family: 'Raleway';
-  color: black;}
+  margin: auto;
+  margin-top: 2%;
+  width: 75%;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+}
+
+p {
+  font-size: 0.75em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.0em;
+}
+
+#logo {
+  width: 15%;
+}
+
+#haut_gauche {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#haut_droite {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  padding-right: 4%;
+}
+
+a:hover {
+  color:  #0065FC;
+}
+
+#name {
+  width: 200px;
+}
+
+#filtres {
+  display: flex;
+  justify-content: space-between;
+  width: 150%;
+}
+
+#barre_recherche {
+  display: flex;
+}
+
+#hebergements {
+  display: flex;
+  flex-direction: column;
+
+  align-content: space-between;
+  justify-content: space-between;
+  border: #F2F2F2;
+  background-color:  #F2F2F2;
+  border-radius: 2%;
+  width: 60%;
+  height: 150%;
+  padding: 2%;
+}
+
+#photos_heb {
+
+}
+
+#auberge_can {
+  background-color: white;
+  border-radius: 8%;
+  width: 15em;
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  text
+}
+
 
 #cannebière {
-  width: 12%;
-  height: 12%;
+  width: 15em;
+  border-top-left-radius: 8%; border-top-right-radius: 8%;
 }
 
 #port {
-  width: 12%;
-  height: 12%;
+
 }
 
 #mouettes {
-  width: 12%;
-  height: 12%;
+
 }
 
 #mer {
-  width: 12%;
-  height: 12%;
+
 }
 
 #panier {
-  width: 12%;
-  height: 12%;
+
 }
 
 #amina {
-  width: 12%;
-  height: 12%;
+
 }
 
 #matin {
