@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Raleway';
   src: url('static/Raleway-Regular.ttf');
+  src: url('static/Raleway-Bold.ttf');
 }
 
 body { 
@@ -28,6 +29,10 @@ h2 {
   font-size: 1.0em;
 }
 
+h3 {
+  font-size: 1em;
+}
+
 #logo {
   width: 15%;
 }
@@ -49,73 +54,258 @@ a:hover {
   color:  #0065FC;
 }
 
-#name {
-  width: 200px;
+#sinscrire {
+  font-family: 'Raleway';
+  font-weight: bold;
+  color: #0065FC;
+}
+
+#barre_recherche {
+  display: flex;
+  height: 2.75em; 
+}
+
+#marker {
+  background-color: #F2F2F2;
+  width: 1em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+#recherche {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 1em;
+  border: 1px,  #F2F2F2;
+}
+
+button {
+  background-color: #0065FC;
+  color: white;
+  width: 25%;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border: white;
+  font-size: 1.25em;
+  font-family: 'Raleway';
+}
+
+button h2 {
+  position: relative;
+  bottom: 0.4em;
 }
 
 #filtres {
   display: flex;
   justify-content: space-between;
   width: 150%;
+  height: 5em;
+  padding-top: 3em;
 }
 
-#barre_recherche {
-  display: flex;
+#filtres img {
+  width: 1em;
+  z-index: 2;
+  position: relative;
+  bottom: 1em;
+  left: 0.15em;
+}
+
+.cercles {
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  width: 2.5em;  
+  height: 2.5em;
+  position: relative;
+  left: 3.6em;
+  top: 0.18em;
+  z-index: 1;
 }
 
 #hebergements {
   display: flex;
   flex-direction: column;
-
   align-content: space-between;
   justify-content: space-between;
   border: #F2F2F2;
   background-color:  #F2F2F2;
-  border-radius: 2%;
-  width: 60%;
-  height: 150%;
+  border-radius: 1em;
+  width: 50em;
   padding: 2%;
 }
 
-#photos_heb {
-
+#vignettes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50em;
+  height: 28em;
+  justify-content: space-between;
+  align-items: center; 
 }
-
-#auberge_can {
+/* ------------------------------------------------------------ cannebière */
+#cannebière_fond { 
   background-color: white;
-  border-radius: 8%;
+  border-radius: 1em;
   width: 15em;
+  height: 11.5em;
   padding: 0.25em;
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
-  text
+  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
 }
 
-
-#cannebière {
+#cannebière_photo {
   width: 15em;
-  border-top-left-radius: 8%; border-top-right-radius: 8%;
+  border-top-left-radius: 1em; border-top-right-radius: 1em;
 }
 
-#port {
-
+#cannebière_légende {
+  padding-left: 7%; 
+  line-height: 20%;   
 }
 
-#mouettes {
-
+.quatre_étoiles {
+  width: 35%;
+  position: relative;
+  bottom: 5px;
+}
+/* ------------------------------------------------------------ port */
+#port_fond { 
+  background-color: white;
+  border-radius: 1em;
+  width: 15em;
+  height: 11.5em;
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
 }
 
-#mer {
-
+#port_photo {
+  width: 15em;
+  border-top-left-radius: 1em; border-top-right-radius: 1em;
 }
 
-#panier {
-
+#port_légende {
+  padding-left: 7%; 
+  line-height: 20%;   
 }
 
-#amina {
+.cinq_étoiles {
+  width: 35%;
+  position: relative;
+  bottom: 5px;
+}
+/* ------------------------------------------------------------ mouettes */
+#mouettes_fond { 
+  background-color: white;
+  border-radius: 1em;
+  width: 15em;
+  height: 11.5em;
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
+}
 
+#mouettes_photo {
+  width: 15em;
+  border-top-left-radius: 1em; border-top-right-radius: 1em;
+}
+
+#mouettes_légende {
+  padding-left: 7%; 
+  line-height: 20%; 
+}
+
+.quatre_étoiles {
+  width: 35%;
+  position: relative;
+  bottom: 5px;
+}
+/* ------------------------------------------------------------ mer */
+#mer_fond { 
+  background-color: white;
+  border-radius: 1em;
+  width: 15em;
+  height: 11.5em;
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
+}
+
+#mer_photo {
+  width: 15em;
+  border-top-left-radius: 1em; border-top-right-radius: 1em;
+}
+
+#mer_légende {
+  padding-left: 7%; 
+  line-height: 20%; 
+}
+
+.trois_étoiles {
+  width: 35%;
+  position: relative;
+  bottom: 5px;
+}
+/* ------------------------------------------------------------ panier */
+#panier_fond { 
+  background-color: white;
+  border-radius: 1em;
+  width: 15em;
+  height: 11.5em;
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
+}
+
+#panier_photo {
+  width: 15em;
+  border-top-left-radius: 1em; border-top-right-radius: 1em;
+}
+
+#panier_légende {
+  padding-left: 7%; 
+  line-height: 20%; 
+}
+
+.quatre_étoiles {
+  width: 35%;
+  position: relative;
+  bottom: 5px;
+}
+/* ------------------------------------------------------------ amina */
+#amina_fond { 
+  background-color: white;
+  border-radius: 1em;
+  width: 15em;
+  height: 11.5em;
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
+}
+
+#amina_photo {
+  width: 15em;
+  border-top-left-radius: 1em; border-top-right-radius: 1em;
+}
+
+#amina_légende {
+  padding-left: 7%; 
+  line-height: 20%; 
+}
+
+.cinq_étoiles {
+  width: 35%;
+  position: relative;
+  bottom: 5px;
 }
 
 #matin {

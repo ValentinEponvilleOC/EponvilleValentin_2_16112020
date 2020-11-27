@@ -4,30 +4,39 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/432bec7c96.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
 <div id="bloc_page"> 
   <header>
     <div id="haut_gauche">
-      <img src="logo/Reservia@3x.png" id="logo" alt="logo du site">
+      <img src="logo/Reservia.svg" id="logo" alt="logo du site">
       <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
       <p>En plein centre-ville ou pleine nature</p>
 
     <div id="barre_recherche">
-      <input type="text" id="name" name="name" required
-        minlength="4" maxlength="8" size="10" required size="45">
-      <div>
-        <button>Rechercher</button>
-      </div>
+      <img src="logo/map-marker-alt-solid.svg" id="marker" alt="marqueur">
+      <input type="text" id="recherche" name="recherche" required
+        minlength="4" maxlength="18" size="25" required size="50"">
+        <button><h2>Rechercher</h2></button>
     </div>
       
+    
       <div id="filtres">
         <h2>Filtres</h2>
-        <h2>Économique</h2>
-        <h2>Familial</h2>
-        <h2>Romantique</h2>
-        <h2>Animaux autorisés</h2>
+            <div class="cercles"></div>
+            <img src="logo/billet.svg" id="billet" alt="section_économique">
+            <h2>Économique</h2> 
+            <div class="cercles"></div>
+            <img src="logo/enfant.svg" id="enfant" alt="section_familiale">
+            <h2>Familial</h2>
+            <div class="cercles"></div>
+            <img src="logo/coeur.svg" id="coeur" alt="section_romantique">
+            <h2>Romantique</h2>
+            <div class="cercles"></div>
+            <img src="logo/chien.svg" id="chien" alt="section_animaux">
+            <h2>Animaux autorisés</h2> 
       </div>
 
       <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -35,7 +44,7 @@
     <div id="haut_droite">
       <p><a href="#">Hébergements</a></p>
       <p>Activités</p>
-      <p>S'inscrire</p>
+      <div id="sinscrire"><p>S'inscrire</p></div>
     </div>
   </header>
 
@@ -43,46 +52,63 @@
 
   <div id="hebergements">
     <h1>Hébergements à Marseille</h1>
-    <div id="photos_heb">
-      <div id="auberge_can">
-        <img src="hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" id="cannebière" alt="chambre_Cannebière">
-        <figcaption><h3>Auberge la Cannebière</h3>
-        <p>Nuit à partir de 25€</p>
-        </figcaption>
-      </div>
-      <div id="Port">
-        <img src="hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" id="port" alt="chambre_port">
-        <figcaption><h3>Hôtel du port</h3>
-        <p>Nuit à partir de 52€</p>
-        </figcaption>
-      </div>
-      <div id="Mouettes">
-        <img src="hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" id="mouettes" alt="chambre_mouettes">
-        <figcaption><h3>Hôtel Les mouettes</h3>
-        <p>Nuit à partir de 76€</p>
-        </figcaption>
-      </div>  
-      <div id="La mer">
-        <img src="hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" id="mer" alt="chambre_de_la_mer">
-        <figcaption><h3>Hôtel de la mer</h3>
-        <p>Nuit à partir de 46€</p>
-        </figcaption>
-      </div>
-      <div id="Le Panier">
-        <img src="hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" id="panier" alt="chambre_Panier">
-        <figcaption><h3>Auberge Le Panier</h3>
-        <p>Nuit à partir de 23€</p>
-        </figcaption>
-      </div>
-      <div id="Amina">
-        <img src="hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" id="amina" alt="chambre_Amina">
-        <figcaption><h3>Hôtel chez Amina</h3>
-        <p>Nuit à partir de 96€</p>
-        </figcaption>
-      </div>
-    </div>  
+    <div id="vignettes">
+        <div id="cannebière_fond">
+          <img src="hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" id="cannebière_photo" alt="chambre_Cannebière">
+             <div id="cannebière_légende"><figcaption><h3>Auberge la Cannebière</h3>
+              <p>Nuit à partir de 25€</p>
+              <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
+              </figcaption>
+             </div>
+        </div>
+
+        <div id="port_fond">
+          <img src="hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" id="port_photo" alt="chambre_port">
+            <div id="port_légende"><figcaption><h3>Hôtel du port</h3>
+             <p>Nuit à partir de 52€</p>
+             <img src="logo/5_stars.svg" class="cinq_étoiles" alt="cinq_étoiles">
+             </figcaption>
+            </div>
+        </div>
+
+        <div id="mouettes_fond">
+          <img src="hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" id="mouettes_photo" alt="chambre_mouettes">
+           <div id="mouettes_légende"><figcaption><h3>Hôtel Les mouettes</h3>
+            <p>Nuit à partir de 76€</p>
+            <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
+            </figcaption>
+           </div>
+        </div>  
+
+        <div id="mer_fond">
+          <img src="hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" id="mer_photo" alt="chambre_de_la_mer">
+           <div id="mer_légende"><figcaption><h3>Hôtel de la mer</h3>
+            <p>Nuit à partir de 46€</p>
+            <img src="logo/3_stars.svg" class="trois_étoiles" alt="trois_étoiles">
+            </figcaption>
+           </div>
+        </div>
+
+        <div id="panier_fond">
+          <img src="hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" id="panier_photo" alt="chambre_Panier">
+           <div id="panier_légende"><figcaption><h3>Auberge Le Panier</h3>
+            <p>Nuit à partir de 23€</p>
+            <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
+            </figcaption>
+           </div>
+        </div>
+
+        <div id="amina_fond">
+          <img src="hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" id="amina_photo" alt="chambre_Amina">
+           <div id="amina_légende"><figcaption><h3>Hôtel chez Amina</h3>
+            <p>Nuit à partir de 96€</p>
+            <img src="logo/5_stars.svg" class="cinq_étoiles" alt="cinq_étoiles">
+            </figcaption>
+           </div>
+        </div> 
+     </div> <!-- div vignettes --> 
     <h2>Afficher plus</h2>
-  </div>
+  </div> <!-- div hébergements -->
 
   </section_1>
 
