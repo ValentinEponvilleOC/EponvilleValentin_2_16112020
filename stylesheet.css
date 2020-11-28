@@ -10,11 +10,14 @@ body {
   margin: auto;
   margin-top: 2%;
   width: 75%;
+  display: flex;
+  flex-direction: column;
+  height: 500em;
 }
 
 header {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
@@ -33,20 +36,31 @@ h3 {
   font-size: 1em;
 }
 
+#top {
+  display: flex;
+  justify-content: space-between;
+}
+
 #logo {
-  width: 15%;
+  width: 7em;
+}
+
+#haut_gauche h1 {
+  position: relative;
+  top: 1.5em;
 }
 
 #haut_gauche {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  height: 20em;
 }
 
 #haut_droite {
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  width: 20em;
   padding-right: 4%;
 }
 
@@ -68,8 +82,8 @@ a:hover {
 #marker {
   background-color: #F2F2F2;
   width: 1em;
-  padding-right: 1.5em;
-  padding-left: 1.5em;
+  padding-right: 1em;
+  padding-left: 1em;
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
 }
@@ -78,51 +92,135 @@ a:hover {
   font-family: 'Raleway';
   font-weight: bold;
   font-size: 1em;
-  border: 1px,  #F2F2F2;
+  border: 1px solid #F2F2F2;
+  text-align: center;
 }
 
 button {
   background-color: #0065FC;
   color: white;
-  width: 25%;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 1em;
+  width: 7.5em;
+  border-top-right-radius: 0.75em;
+  border-bottom-right-radius: 0.75em;
   border: white;
-  font-size: 1.25em;
+  font-size: 1em;
   font-family: 'Raleway';
 }
 
 button h2 {
   position: relative;
-  bottom: 0.4em;
+  bottom: 0.1em;
 }
+
+/* ------------------------------------------------------------ filtres */
 
 #filtres {
   display: flex;
   justify-content: space-between;
-  width: 150%;
-  height: 5em;
-  padding-top: 3em;
+  width: 55em;
+}  
+
+/* -------------------------------------- filtre_éco */
+
+#filtre_éco {
+  border: 0.2em solid #F2F2F2;
+  border-radius: 2em;
+  width: 11em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+#filtre_éco h2 {
+  position: relative;
+  left: 1em;
+}
+
+.pastille {
+  position: relative;
+  right: 0.5em;
+  bottom: 0.1em;
 }
 
 #filtres img {
   width: 1em;
   z-index: 2;
-  position: relative;
-  bottom: 1em;
-  left: 0.15em;
 }
 
-.cercles {
+.cercle {
   background-color: #DEEBFF;
   border-radius: 50%;
-  width: 2.5em;  
-  height: 2.5em;
-  position: relative;
-  left: 3.6em;
-  top: 0.18em;
+  width: 2.75em;  
+  height: 2.75em;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* -------------------------------------- filtre_fam */
+
+#filtre_fam {
+  border: 0.2em solid #F2F2F2;
+  border-radius: 2em;
+  width: 9em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+#filtre_fam h2 {
+  position: relative;
+  left: 1em;
+}
+
+/* -------------------------------------- filtre_rom */
+
+#filtre_rom {
+  border: 0.2em solid #F2F2F2;
+  border-radius: 2em;
+  width: 11em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+#filtre_rom h2 {
+  position: relative;
+  left: 1em;
+}
+
+/* -------------------------------------- filtre_anim */
+
+#filtre_anim {
+  border: 0.2em solid #F2F2F2;
+  border-radius: 2em;
+  width: 14em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+#filtre_anim h2 {
+  position: relative;
+  left: 1em;
+}
+
+#info {
+  display: flex;
+  justify-content: space-between;
+  width: 21.5em;
+}
+
+#logo_info {
+  width: 1.5em;
+}
+
+/* ------------------------------------------------------------ hébergements */
 
 #hebergements {
   display: flex;
@@ -136,6 +234,10 @@ button h2 {
   padding: 2%;
 }
 
+#hebergements h1 {
+  position: relative;
+}
+
 #vignettes {
   display: flex;
   flex-direction: row;
@@ -145,7 +247,7 @@ button h2 {
   justify-content: space-between;
   align-items: center; 
 }
-/* ------------------------------------------------------------ cannebière */
+/* -------------------------------------- cannebière */
 #cannebière_fond { 
   background-color: white;
   border-radius: 1em;
@@ -172,7 +274,7 @@ button h2 {
   position: relative;
   bottom: 5px;
 }
-/* ------------------------------------------------------------ port */
+/* -------------------------------------- port */
 #port_fond { 
   background-color: white;
   border-radius: 1em;
@@ -199,7 +301,7 @@ button h2 {
   position: relative;
   bottom: 5px;
 }
-/* ------------------------------------------------------------ mouettes */
+/* -------------------------------------- mouettes */
 #mouettes_fond { 
   background-color: white;
   border-radius: 1em;
@@ -226,7 +328,7 @@ button h2 {
   position: relative;
   bottom: 5px;
 }
-/* ------------------------------------------------------------ mer */
+/* -------------------------------------- mer */
 #mer_fond { 
   background-color: white;
   border-radius: 1em;
@@ -253,7 +355,7 @@ button h2 {
   position: relative;
   bottom: 5px;
 }
-/* ------------------------------------------------------------ panier */
+/* -------------------------------------- panier */
 #panier_fond { 
   background-color: white;
   border-radius: 1em;
@@ -280,7 +382,7 @@ button h2 {
   position: relative;
   bottom: 5px;
 }
-/* ------------------------------------------------------------ amina */
+/* -------------------------------------- amina */
 #amina_fond { 
   background-color: white;
   border-radius: 1em;
