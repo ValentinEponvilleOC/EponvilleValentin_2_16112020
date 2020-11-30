@@ -7,9 +7,9 @@
 body { 
   border: black, 1px;
   font-family: 'Raleway';
+  width: 1400px;
   margin: auto;
   margin-top: 2%;
-  width: 75%;
   display: flex;
   flex-direction: column;
   height: 500em;
@@ -61,7 +61,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   width: 20em;
-  padding-right: 4%;
+ 
 }
 
 a:hover {
@@ -220,6 +220,14 @@ button h2 {
   width: 1.5em;
 }
 
+/* ------------------------------------------------------------------------------ section_1 */
+
+#section_1 {
+  display: flex;
+  justify-content: space-between;
+  height: 40em;
+}
+
 /* ------------------------------------------------------------ hébergements */
 
 #hebergements {
@@ -230,7 +238,6 @@ button h2 {
   border: #F2F2F2;
   background-color:  #F2F2F2;
   border-radius: 1em;
-  width: 50em;
   padding: 2%;
 }
 
@@ -246,6 +253,7 @@ button h2 {
   height: 28em;
   justify-content: space-between;
   align-items: center; 
+  position: relative;
 }
 /* -------------------------------------- cannebière */
 #cannebière_fond { 
@@ -256,7 +264,7 @@ button h2 {
   padding: 0.25em;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
+  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
 }
 
 #cannebière_photo {
@@ -283,7 +291,7 @@ button h2 {
   padding: 0.25em;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
+  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
 }
 
 #port_photo {
@@ -310,7 +318,7 @@ button h2 {
   padding: 0.25em;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
+  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
 }
 
 #mouettes_photo {
@@ -337,7 +345,7 @@ button h2 {
   padding: 0.25em;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
+  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
 }
 
 #mer_photo {
@@ -364,7 +372,7 @@ button h2 {
   padding: 0.25em;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
+  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
 }
 
 #panier_photo {
@@ -391,7 +399,7 @@ button h2 {
   padding: 0.25em;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 5px 15px 5px rgba(100, 100, 100, 25%);
+  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
 }
 
 #amina_photo {
@@ -410,47 +418,117 @@ button h2 {
   bottom: 5px;
 }
 
-#matin {
-  width: 12%;
-  height: 12%;
+/* ------------------------------------------------------------ les_plus_populaires */
+
+#les_plus_populaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:  #F2F2F2;
+  border-radius: 1em;
+  width: 495px;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  /* border: 1px solid blue; */
 }
 
-#cœur {
-  width: 12%;
-  height: 12%;
+#ensemble_vignettes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  height: 600px;
 }
 
-#tout_bleu {
-  width: 12%;
-  height: 12%;
+#titre_chart {
+  display: flex;
+  justify-content: space-between;
+  width: 403px;
+  /* border: 1px solid green; */
 }
 
-#vieux {
-  width: 12%;
-  height: 12%;
+#les_plus_populaires h1 {
+  position: relative;
 }
 
-#fort {
-  width: 12%;
-  height: 12%;
+.vignette {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 1em;
+  background-color: white;
+  height: 10em;
+  width: 25em;
+  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
 }
 
-#friout {
-  width: 12%;
-  height: 12%;
+.populaire_photos {
+  max-width: 300px;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  width: 12em;
+  border: 3px solid white; 
 }
 
-#calanques {
-  width: 12%;
-  height: 12%;
+#les_plus_populaires figcaption {
+  padding-left: 1em;
+  padding-right: 1em;
+  word-wrap: break-word;
 }
 
-#notre_dame {
-  width: 12%;
-  height: 12%;
+.étoiles_pop {
+  width: 4em;
+  padding-top: 2.5em;
 }
 
-#longchamp {
-  width: 12%;
-  height: 12%;
+#lien_externe {
+  width: 1.5em;
+}
+
+
+/* ------------------------------------------------------------------------------ section_2 */
+
+#Activités_à_Marseille {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 2em;
+}
+
+#section_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 0.25em solid red; */
+  height: 27em;
+}
+
+.vignettes_act {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
+}
+
+.vignettes_act img {
+  width: 300px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+#deuxième_colonne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#quatrième_colonne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vignettes_act h3 {
+  padding-left: 1.5em;
 }
