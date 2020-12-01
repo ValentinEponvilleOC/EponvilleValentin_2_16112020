@@ -12,7 +12,7 @@ body {
   margin-top: 2%;
   display: flex;
   flex-direction: column;
-  height: 500em;
+  height: 50em;
 }
 
 header {
@@ -531,4 +531,43 @@ button h2 {
 
 .vignettes_act h3 {
   padding-left: 1.5em;
+}
+
+/* ------------------------------------------------------------------------------ footer */
+
+footer {
+  display: flex;
+  /* border: 1px solid red; */
+  margin-top: 3em;
+  height: 13em;
+  background-color: #F2F2F2;
+}
+
+#zone_textes {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  margin-left: 3em;
+  width: 65em;
+
+}
+
+#zone_textes p {
+  list-style-type: none;
+  justify-content: flex-start;
+  /* border: 1px solid purple; */
+}
+
+#tous_textes {
+  display: flex;
+  width: 65em;
+  /* border: 1px solid orange; */
+  justify-content: space-between;
+}
+
+/* .puces_et_catégories {
+  flex-direction: column;
+  border: 1px solid green;
+  line-height: 1em;
+  align-items: flex-start; */
 }
