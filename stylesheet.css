@@ -326,8 +326,7 @@ button h2 {
   /* border: 1px solid green; */
 }
 
-/* -------------------------------------- cannebière */
-#cannebière_fond { 
+.fond { 
   background-color: white;
   border-radius: 1em;
   width: 15em;
@@ -338,162 +337,24 @@ button h2 {
   box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
 }
 
-#cannebière_photo {
+.photo_hébergements {
   width: 15em;
   border-top-left-radius: 1em; border-top-right-radius: 1em;
 }
-
-/* #cannebière_légende {
-  padding-left: 7%; 
-  line-height: 20%;   
-} */
 
 .quatre_étoiles {
   width: 35%;
   position: relative;
   bottom: 5px;
 }
-
-/* -------------------------------------- port */
-
-#port_fond { 
-  background-color: white;
-  border-radius: 1em;
-  width: 15em;
-  height: 12em;
-  padding: 0.25em;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-}
-
-#port_photo {
-  width: 15em;
-  border-top-left-radius: 1em; border-top-right-radius: 1em;
-}
-
-/* #port_légende {
-  padding-left: 7%; 
-  line-height: 20%;   
-} */
 
 .cinq_étoiles {
   width: 35%;
   position: relative;
   bottom: 5px;
 }
-
-/* -------------------------------------- mouettes */
-
-#mouettes_fond { 
-  background-color: white;
-  border-radius: 1em;
-  width: 15em;
-  height: 12em;
-  padding: 0.25em;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-}
-
-#mouettes_photo {
-  width: 15em;
-  border-top-left-radius: 1em; border-top-right-radius: 1em;
-}
-
-/* #mouettes_légende {
-  padding-left: 7%; 
-  line-height: 20%; 
-} */
-
-.quatre_étoiles {
-  width: 35%;
-  position: relative;
-  bottom: 5px;
-}
-
-/* -------------------------------------- mer */
-
-#mer_fond { 
-  background-color: white;
-  border-radius: 1em;
-  width: 15em;
-  height: 12em;
-  padding: 0.25em;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-}
-
-#mer_photo {
-  width: 15em;
-  border-top-left-radius: 1em; border-top-right-radius: 1em;
-}
-
-/* #mer_légende {
-  padding-left: 7%; 
-  line-height: 20%; 
-} */
 
 .trois_étoiles {
-  width: 35%;
-  position: relative;
-  bottom: 5px;
-}
-
-/* -------------------------------------- panier */
-
-#panier_fond { 
-  background-color: white;
-  border-radius: 1em;
-  width: 15em;
-  height: 12em;
-  padding: 0.25em;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-}
-
-#panier_photo {
-  width: 15em;
-  border-top-left-radius: 1em; border-top-right-radius: 1em;
-}
-
-/* #panier_légende {
-  padding-left: 7%; 
-  line-height: 20%; 
-} */
-
-.quatre_étoiles {
-  width: 35%;
-  position: relative;
-  bottom: 5px;
-}
-
-/* -------------------------------------- amina */
-
-#amina_fond { 
-  background-color: white;
-  border-radius: 1em;
-  width: 15em;
-  height: 12em;
-  padding: 0.25em;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-}
-
-#amina_photo {
-  width: 15em;
-  border-top-left-radius: 1em; border-top-right-radius: 1em;
-}
-
-/* #amina_légende {
-  padding-left: 7%; 
-  line-height: 20%; 
-} */
-
-.cinq_étoiles {
   width: 35%;
   position: relative;
   bottom: 5px;
@@ -598,6 +459,11 @@ button h2 {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
+
+/*#pomègues, #friout {
+  display: flex;
+  flex-direction: column;
+}*/
 
 #deuxième_colonne {
   display: flex;

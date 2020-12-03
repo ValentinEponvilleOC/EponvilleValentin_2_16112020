@@ -10,15 +10,21 @@
         width: 100%;
         height: 100%;
         border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       
       header {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        height: 50em;
+        border: 0.25em solid purple;
       }
       
       p {
-        font-size: 0.9em;
+        font-size: 1.1em;
       }
       
       h1 {
@@ -63,6 +69,9 @@
       
       #deux_premières_phrases {
         margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       
       #haut_droite {
@@ -94,6 +103,7 @@
       #barre_recherche {
         display: flex;
         height: 2.75em; 
+        justify-content: center;
       }
       
       #marker {
@@ -132,11 +142,12 @@
       /* ------------------------------------------------------------ filtres */
       
       #filtres {
-        display: flex;
-        justify-content: space-between;
-        width: 55em;
-      }  
-      
+        display: inline-block;
+        height: auto;
+        width: auto;
+        border: 1px solid black;
+      } 
+
       /* -------------------------------------- filtre_éco */
       
       #filtre_éco {
@@ -149,6 +160,7 @@
         align-items: center;
         text-align: justify;
         z-index: 4;
+        flex: -2em;
       }
       
       #filtre_éco:hover {
@@ -275,7 +287,10 @@
       #info {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         width: 25em;
+        border: 1px solid red;
+        margin-top: 5em;
       }
       
       #logo_info {
@@ -287,7 +302,8 @@
       #section_1 {
         display: flex;
         flex-direction: column-reverse;
-        height: 100em;
+        height: 145em;
+        border: 0.25em solid orangered;
       }
       
       /* ------------------------------------------------------------ hébergements */
@@ -295,207 +311,83 @@
       #hebergements {
         display: flex;
         flex-direction: column;
-        align-content: space-between;
-        justify-content: space-between;
-        border: 1px solid red;
+        justify-content: flex-start;
+        align-items: center;
+        /*border: 1px solid red;*/
         border-radius: 1em;
         padding: 2%;
-        height: 50em;
+        height: 150em;
         background-color: white;
       }
       
       #hebergements h1 {
-        position: relative;
+        width: auto;
+        /*border: 1px solid blue;*/
+        padding-right: 4.5em;
+      }
+
+      #hebergements h2 {
+      /*border: 1px solid brown;*/
+        padding-right: 11em;
+        font-size: 150%;
       }
       
       #vignettes {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        width: 50em;
-        height: 50em;
         justify-content: space-between;
-        align-items: center; 
-        position: relative;
+        flex-wrap: nowrap;
+        width: auto;
+        height: 100em;
+        /*border: 1px solid purple;*/
+      }
+
+      .fond { 
+        background-color: white;
+        border-radius: 1em;
+        width: 25em;
+        height: 15em;
+        padding: 0.25em;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
       }
       
+      .box_photo {
+        overflow: hidden;
+        width: 25em;
+        height: 9em;
+        border-top-left-radius: 1em; border-top-right-radius: 1em;
+        /*border: 1px solid orangered;*/
+      }
+
+      .photo_hébergements {
+        width: 25em;
+        height: 10em;
+        border-top-left-radius: 1em; border-top-right-radius: 1em;
+        /*border: 1px solid green;*/
+      }
+
       .légendes {
         padding-left: 7%; 
-        line-height: 20%;
-        /* border: 1px solid green; */
-      }
-      
-      /* -------------------------------------- cannebière */
-      #cannebière_fond { 
-        background-color: white;
-        border-radius: 1em;
-        width: 15em;
-        height: 12em;
-        padding: 0.25em;
+        line-height: 75%;
+        /*border: 1px solid green;*/ 
+        height: 6em;
         display: flex;
         flex-direction: column;
-        box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
+        justify-content: space-between;
       }
-      
-      #cannebière_photo {
-        width: 15em;
-        border-top-left-radius: 1em; border-top-right-radius: 1em;
-      }
-      
-      /* #cannebière_légende {
-        padding-left: 7%; 
-        line-height: 20%;   
-      } */
       
       .quatre_étoiles {
-        width: 35%;
-        position: relative;
-        bottom: 5px;
+        width: 5em;
       }
-      
-      /* -------------------------------------- port */
-      
-      #port_fond { 
-        background-color: white;
-        border-radius: 1em;
-        width: 15em;
-        height: 12em;
-        padding: 0.25em;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-      }
-      
-      #port_photo {
-        width: 15em;
-        border-top-left-radius: 1em; border-top-right-radius: 1em;
-      }
-      
-      /* #port_légende {
-        padding-left: 7%; 
-        line-height: 20%;   
-      } */
       
       .cinq_étoiles {
-        width: 35%;
-        position: relative;
-        bottom: 5px;
+        width: 5em;
       }
-      
-      /* -------------------------------------- mouettes */
-      
-      #mouettes_fond { 
-        background-color: white;
-        border-radius: 1em;
-        width: 15em;
-        height: 12em;
-        padding: 0.25em;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-      }
-      
-      #mouettes_photo {
-        width: 15em;
-        border-top-left-radius: 1em; border-top-right-radius: 1em;
-      }
-      
-      /* #mouettes_légende {
-        padding-left: 7%; 
-        line-height: 20%; 
-      } */
-      
-      .quatre_étoiles {
-        width: 35%;
-        position: relative;
-        bottom: 5px;
-      }
-      
-      /* -------------------------------------- mer */
-      
-      #mer_fond { 
-        background-color: white;
-        border-radius: 1em;
-        width: 15em;
-        height: 12em;
-        padding: 0.25em;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-      }
-      
-      #mer_photo {
-        width: 15em;
-        border-top-left-radius: 1em; border-top-right-radius: 1em;
-      }
-      
-      /* #mer_légende {
-        padding-left: 7%; 
-        line-height: 20%; 
-      } */
-      
+
       .trois_étoiles {
-        width: 35%;
-        position: relative;
-        bottom: 5px;
-      }
-      
-      /* -------------------------------------- panier */
-      
-      #panier_fond { 
-        background-color: white;
-        border-radius: 1em;
-        width: 15em;
-        height: 12em;
-        padding: 0.25em;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-      }
-      
-      #panier_photo {
-        width: 15em;
-        border-top-left-radius: 1em; border-top-right-radius: 1em;
-      }
-      
-      /* #panier_légende {
-        padding-left: 7%; 
-        line-height: 20%; 
-      } */
-      
-      .quatre_étoiles {
-        width: 35%;
-        position: relative;
-        bottom: 5px;
-      }
-      
-      /* -------------------------------------- amina */
-      
-      #amina_fond { 
-        background-color: white;
-        border-radius: 1em;
-        width: 15em;
-        height: 12em;
-        padding: 0.25em;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-      }
-      
-      #amina_photo {
-        width: 15em;
-        border-top-left-radius: 1em; border-top-right-radius: 1em;
-      }
-      
-      /* #amina_légende {
-        padding-left: 7%; 
-        line-height: 20%; 
-      } */
-      
-      .cinq_étoiles {
-        width: 35%;
-        position: relative;
-        bottom: 5px;
+        width: 5em;
       }
       
       /* ------------------------------------------------------------ les_plus_populaires */
@@ -505,8 +397,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color:  #F2F2F2;
-        border-radius: 1em;
+        background-color: #F2F2F2;
+        border-radius: 0em;
         width: 100%;
         padding-bottom: 2em;
         padding-top: 1em;
@@ -555,95 +447,151 @@
         padding-left: 1em;
         padding-right: 1em;
         word-wrap: break-word;
-        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 10em;
+        border: 1px solid red; 
+        position: relative;
       }
       
       .étoiles_pop {
-        width: 4em;
+        width: 5em;
         padding-top: 2.5em;
       }
       
       #lien_externe {
         width: 1.5em;
       }
-      
-      
+       
       /* ------------------------------------------------------------------------------ section_2 */
       
       #Activités_à_Marseille {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: flex-start;
+        align-items: center;
         margin-top: 2em;
+        border: 0.25em solid pink;
+        height: 125em;
+      }
+
+      #Activités_à_Marseille h1 {
+        width: auto;
+        padding-right: 7.5em;
       }
       
       #section_2 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        /* border: 0.25em solid red; */
-        height: 27em;
+        border: 0.25em solid red;
+        height: 120em;
       }
+
+      /*#deuxième_colonne, #quatrième_colonne {
+        display: none;
+        border: 0.25em solid purple;
+      }*/
       
       .vignettes_act {
         display: flex;
         flex-direction: column;
         border-radius: 1em;
+        width: 25em;
+        height: 15em;
         box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
+        border: 0.25em solid blue;
       }
+
       
+      #section_2 .box_photo {
+        overflow: hidden;
+        width: 25em;
+        height: 10.5em;
+        border-top-left-radius: 1em; border-top-right-radius: 1em;
+        /*border: 1px solid orangered;*/
+      }
+
       .vignettes_act img {
-        width: 300px;
+        width: 25em;
+        height: 11em;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
       }
       
-      #deuxième_colonne {
+      #section_2 figcaption {
+        /*border: 0.25em solid cyan;*/
+        height: 4.5em;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
       }
-      
-      #quatrième_colonne {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      
+
       .vignettes_act h3 {
         padding-left: 1.5em;
       }
-      
+
+      .vignettes_act_empilées {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1em;
+        width: 25em;
+        height: 15em;
+        box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
+        border: 0.25em solid blue;
+      }
+
+      .vignettes_act_empilées img {
+        width: 25em;
+        height: 11em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+      }
+
+      .vignettes_act_empilées h3 {
+        padding-left: 1.5em;
+      }
+
+
+
       /* ------------------------------------------------------------------------------ footer */
       
       footer {
         display: flex;
-        border: 1px solid red; 
+        /*border: 1px solid red;*/    
         margin-top: 3em;
-        height: 13em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        height: auto;
         background-color: #F2F2F2;
-        width: 50em;
+        width: auto;
       }
       
       #zone_textes {
-        border: 1px solid blue;
+        /*border: 1px solid blue;*/
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: start;
         margin-left: 3em;
-        width: 50em;
+        margin-right: 3em;
+        height: 25em;
       
       }
       
       #zone_textes p {
         list-style-type: none;
         justify-content: flex-start;
-        border: 1px solid purple;
+        /*border: 1px solid purple;*/
       }
       
       #tous_textes {
         display: flex;
-        width: 65em;
-        border: 1px solid orange;
+        flex-direction: column;
+        width: auto;
+        /*border: 1px solid orange;*/
         justify-content: space-between;
+        align-items: start;
+        height: 25em;
       }
 }
