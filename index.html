@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" media="screen and (max-width: 1024px)" href="smartphone.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/432bec7c96.js" crossorigin="anonymous"></script>
   <title>Document</title>
@@ -12,66 +13,68 @@
       <div id="top">
         <img src="logo/Reservia.svg" id="logo" alt="logo du site">
         <div id="haut_droite">
-        <p><a href="#">Hébergements</a></p>
-        <p>Activités</p>
+        <p><a href="#hebergements">Hébergements</a></p>
+        <p><a href="#Activités_à_Marseille">Activités</a></p>
         <div id="sinscrire"><p>S'inscrire</p></div>
         </div>
       </div>
 
-        <div id="haut_gauche">
+          <div id="deux_premières_phrases">
           <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
           <p>En plein centre-ville ou pleine nature</p>
+          </div>
 
-            <div id="barre_recherche">
-              <img src="logo/map-marker-alt-solid.svg" id="marker" alt="marqueur">
-              <input type="text" id="recherche" name="recherche" required
-                minlength="4" maxlength="18" size="25" required size="50"">
-              <button><h2>Rechercher</h2></button>
-            </div>
+        <div id="haut_gauche">          
+              <div id="barre_recherche">
+                <img src="logo/map-marker-alt-solid.svg" id="marker" alt="marqueur">
+                <input type="text" id="recherche" name="recherche" required
+                  minlength="4" maxlength="18" size="25" required size="50"">
+                <button type="button"><h2>Rechercher</h2></button>
+              </div>
+            
           
-        
-            <div id="filtres">
-                  <h2>Filtres</h2>
-                    <div id="filtre_éco">
-                      <div class="pastille">
-                        <div class="cercle">
-                        <img src="logo/billet.svg" id="billet" alt="section_économique">
+              <div id="filtres">
+                    <h2>Filtres</h2>
+                      <div id="filtre_éco">
+                        <div class="pastille">
+                          <div class="cercle">
+                          <img src="logo/billet.svg" id="billet" alt="section_économique">
+                          </div>
                         </div>
+                        <h2>Économique</h2>
                       </div>
-                      <h2>Économique</h2>
-                    </div>
-                    <div id="filtre_fam">
-                      <div class="pastille">
-                        <div class="cercle">
-                        <img src="logo/enfant.svg" id="enfant" alt="section_familiale">
+                      <div id="filtre_fam">
+                        <div class="pastille">
+                          <div class="cercle">
+                          <img src="logo/enfant.svg" id="enfant" alt="section_familiale">
+                          </div>
                         </div>
-                      </div>
-                      <h2>Familial</h2>
-                    </div>  
-                    <div id="filtre_rom">
-                      <div class="pastille">
-                        <div class="cercle">
-                        <img src="logo/coeur.svg" id="coeur" alt="section_romantique">
+                        <h2>Familial</h2>
+                      </div>  
+                      <div id="filtre_rom">
+                        <div class="pastille">
+                          <div class="cercle">
+                          <img src="logo/coeur.svg" id="coeur" alt="section_romantique">
+                          </div>
                         </div>
+                        <h2>Romantique</h2>
                       </div>
-                      <h2>Romantique</h2>
-                    </div>
-                    <div id="filtre_anim">
-                      <div class="pastille">
-                        <div class="cercle">
-                        <img src="logo/chien.svg" id="chien" alt="section_animaux">
+                      <div id="filtre_anim">
+                        <div class="pastille">
+                          <div class="cercle">
+                          <img src="logo/chien.svg" id="chien" alt="section_animaux">
+                          </div>
                         </div>
+                        <h2>Animaux autorisés</h2>
                       </div>
-                      <h2>Animaux autorisés</h2>
-                    </div>
             </div>
 
-        <div id="info">
-        <img src="logo/info.svg" id="logo_info" alt="logo_info">    
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
+          <div id="info">
+          <img src="logo/info.svg" id="logo_info" alt="logo_info">    
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
 
-      </div>
+         </div>
 
     </header>
 
@@ -79,58 +82,58 @@
     <div id="hebergements"> <!--Hébergement à Marseille-->
       <h1>Hébergements à Marseille</h1>
       <div id="vignettes">
-          <div id="cannebière_fond">
+          <div id="cannebière_fond"><a href="hébergements.html" target="_blank">
             <img src="hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" id="cannebière_photo" alt="chambre_Cannebière">
-              <div id="cannebière_légende"><figcaption><h3>Auberge la Cannebière</h3>
+              <div class="légendes"><figcaption><h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de 25€</p>
                 <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
                 </figcaption>
-              </div>
+              </div></a>
           </div>
 
-          <div id="port_fond">
+          <div id="port_fond"><a href="hébergements.html" target="_blank">
             <img src="hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" id="port_photo" alt="chambre_port">
-              <div id="port_légende"><figcaption><h3>Hôtel du port</h3>
+              <div class="légendes"><figcaption><h3>Hôtel du port</h3>
               <p>Nuit à partir de 52€</p>
               <img src="logo/5_stars.svg" class="cinq_étoiles" alt="cinq_étoiles">
               </figcaption>
-              </div>
+              </div></a>
           </div>
 
-          <div id="mouettes_fond">
+          <div id="mouettes_fond"><a href="hébergements.html" target="_blank">
             <img src="hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" id="mouettes_photo" alt="chambre_mouettes">
-            <div id="mouettes_légende"><figcaption><h3>Hôtel Les mouettes</h3>
+            <div class="légendes"><figcaption><h3>Hôtel Les mouettes</h3>
               <p>Nuit à partir de 76€</p>
               <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
               </figcaption>
-            </div>
+            </div></a>
           </div>  
 
-          <div id="mer_fond">
+          <div id="mer_fond"><a href="hébergements.html" target="_blank">
             <img src="hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" id="mer_photo" alt="chambre_de_la_mer">
-            <div id="mer_légende"><figcaption><h3>Hôtel de la mer</h3>
+            <div class="légendes"><figcaption><h3>Hôtel de la mer</h3>
               <p>Nuit à partir de 46€</p>
               <img src="logo/3_stars.svg" class="trois_étoiles" alt="trois_étoiles">
               </figcaption>
-            </div>
+            </div></a>
           </div>
 
-          <div id="panier_fond">
+          <div id="panier_fond"><a href="hébergements.html" target="_blank">
             <img src="hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" id="panier_photo" alt="chambre_Panier">
-            <div id="panier_légende"><figcaption><h3>Auberge Le Panier</h3>
+            <div class="légendes"><figcaption><h3>Auberge Le Panier</h3>
               <p>Nuit à partir de 23€</p>
               <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
               </figcaption>
-            </div>
+            </div></a>
           </div>
 
-          <div id="amina_fond">
+          <div id="amina_fond"><a href="hébergements.html" target="_blank">
             <img src="hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" id="amina_photo" alt="chambre_Amina">
-            <div id="amina_légende"><figcaption><h3>Hôtel chez Amina</h3>
+            <div class="légendes""><figcaption><h3>Hôtel chez Amina</h3>
               <p>Nuit à partir de 96€</p>
               <img src="logo/5_stars.svg" class="cinq_étoiles" alt="cinq_étoiles">
               </figcaption>
-            </div>
+            </div></a>
           </div> 
       </div> <!-- div vignettes --> 
       <h2>Afficher plus</h2>
@@ -144,27 +147,27 @@
           <div id="ensemble_vignettes">
             <div class="vignette">
               <img src="hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="populaire_photos" alt="chambre_soleil_matin">
-              <figcaption>
+                <figcaption>
                 <h3>Hôtel Le soleil du matin</h3>
                 <p>Nuit à partir de 128€</p>
                 <img src="logo/5_stars.svg" class="étoiles_pop" alt="cinq_étoiles">
-              </figcaption>
+                </figcaption>
             </div>
             <div class="vignette">
               <img src="hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="populaire_photos" alt="chambre_cœur_eau">
-              <figcaption>
+                <figcaption>
                 <h3>Au cœur de l'eau Chambres d'hôtes</h3>
                 <p>Nuit à partir de 71€</p>
                 <img src="logo/4_stars.svg" class="étoiles_pop" alt="quatre_étoiles">
-              </figcaption>
+                </figcaption>
             </div>
             <div class="vignette">
               <img src="hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="populaire_photos" alt="chambre_bleu_blanc">
-              <figcaption>
+                <figcaption>
                 <h3>Hôtel Tout bleu et Blanc</h3>
                 <p>Nuit à partir de 68€</p>
                 <img src="logo/4_stars.svg" class="étoiles_pop" alt="quatre_étoiles">
-              </figcaption>
+                </figcaption>
             </div>
           </div>        
     </div>  <!-- les_plus_populaires -->
@@ -176,44 +179,44 @@
 
     <div id="section_2"> <!--Activités à Marseille-->
 
-        <div class="vignettes_act">
-        <img src="activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" id="vieux_photo" alt="bâteaux_dans_Vieux_Port">
-        <figcaption>
+        <div class="vignettes_act"><a href="activités.html" target="_blank">
+          <img src="activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" id="vieux_photo" alt="bâteaux_dans_Vieux_Port">
+          <figcaption>
           <h3>Vieux Port</h3>
-        </figcaption>
+          </figcaption></a>
         </div>
-          <div id="deuxième_colonne">
-            <div class="vignettes_act">
-                  <img src="activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" id="pomègues_photo" alt="fort_de_pomègues">
-                  <figcaption>
-                    <h3>Fort de Pomègues</h3>
-                  </figcaption>
-            </div>     
-            <div class="vignettes_act">    
-                  <img src="activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" id="îles_photo" alt="îles_du_friout">
-                  <figcaption>
-                    <h3>Îles du Friout</h3>
-                  </figcaption>
-            </div>  
-          </div>   
-        <div class="vignettes_act">
+        <div id="deuxième_colonne">
+          <div class="vignettes_act"><a href="activités.html" target="_blank">
+            <img src="activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" id="pomègues_photo" alt="fort_de_pomègues">
+            <figcaption>
+            <h3>Fort de Pomègues</h3>
+            </figcaption></a>
+          </div>     
+          <div class="vignettes_act"><a href="activités.html" target="_blank">    
+            <img src="activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" id="îles_photo" alt="îles_du_friout">
+            <figcaption>
+            <h3>Îles du Friout</h3>
+            </figcaption></a>
+          </div>  
+        </div>   
+        <div class="vignettes_act"><a href="activités.html" target="_blank">
           <img src="activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" id="national_photo" alt="parc_national_calanques">
           <figcaption>
-            <h3>Parc National des Calanques</h3>
-          </figcaption>
+          <h3>Parc National des Calanques</h3>
+          </figcaption></a>
         </div>
         <div id="quatrième_colonne">
-          <div class="vignettes_act">   
+          <div class="vignettes_act"><a href="activités.html" target="_blank">   
               <img src="activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" id="dame_photo" alt="notre_dame_garde">
               <figcaption>
-                <h3>Notre-Dame-de-la-Garde</h3>
-              </figcaption>
+              <h3>Notre-Dame-de-la-Garde</h3>
+              </figcaption></a>
           </div>    
-          <div class="vignettes_act">    
+          <div class="vignettes_act"><a href="activités.html" target="_blank">    
               <img src="activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" id="parc_photo" alt="bâtiment du parc Longchamp">
               <figcaption>
-                <h3>Parc Longchamp</h3>
-              </figcaption>
+              <h3>Parc Longchamp</h3>
+              </figcaption></a>
           </div>
         </div>
 

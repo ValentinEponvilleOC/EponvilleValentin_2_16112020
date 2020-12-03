@@ -5,7 +5,6 @@
 }
 
 body { 
-  border: black, 1px;
   font-family: 'Raleway';
   width: 1400px;
   margin: auto;
@@ -21,7 +20,7 @@ header {
 }
 
 p {
-  font-size: 0.75em;
+  font-size: 0.9em;
 }
 
 h1 {
@@ -39,33 +38,53 @@ h3 {
 #top {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 #logo {
   width: 7em;
 }
 
-#haut_gauche h1 {
-  position: relative;
-  top: 1.5em;
-}
-
 #haut_gauche {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 20em;
+  height: 12em;
+  /* border: 1px solid red; */
+  margin-bottom: 1em;
+}
+
+#haut_gauche h1 {
+  position: relative;
+  border: 1px solid green;
+}
+
+#haut_gauche p {
+  /* border: 1px solid blue; */
+}
+
+#deux_premières_phrases {
+  margin-top: 2em;
 }
 
 #haut_droite {
   display: flex;
   justify-content: space-between;
   width: 20em;
- 
 }
 
-a:hover {
+#haut_droite p a:focus {
   color:  #0065FC;
+  font-weight: bold;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
 
 #sinscrire {
@@ -128,8 +147,21 @@ button h2 {
   width: 11em;
   height: 2.5em;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   text-align: justify;
+  z-index: 4;
+}
+
+#filtre_éco:hover {
+  border: 0.2em solid #F2F2F2;
+  background-color: #0065FC;
+  border-radius: 2em;
+  width: 11em;
+  height: 2.5em;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: white;
 }
 
 #filtre_éco h2 {
@@ -138,9 +170,8 @@ button h2 {
 }
 
 .pastille {
-  position: relative;
-  right: 0.5em;
   bottom: 0.1em;
+  z-index: 3;
 }
 
 #filtres img {
@@ -151,8 +182,8 @@ button h2 {
 .cercle {
   background-color: #DEEBFF;
   border-radius: 50%;
-  width: 2.75em;  
-  height: 2.75em;
+  width: 3em;  
+  height: 3.00em;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -169,6 +200,17 @@ button h2 {
   display: flex;
   align-items: center;
   text-align: justify;
+}
+
+#filtre_fam:hover {
+  border: 0.2em solid #F2F2F2;
+  background-color: #0065FC;
+  border-radius: 2em;
+  width: 9em;
+  height: 2.5em;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: white;
 }
 
 #filtre_fam h2 {
@@ -188,6 +230,17 @@ button h2 {
   text-align: justify;
 }
 
+#filtre_rom:hover {
+  border: 0.2em solid #F2F2F2;
+  background-color: #0065FC;
+  border-radius: 2em;
+  width: 11em;
+  height: 2.5em;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: white;
+}
+
 #filtre_rom h2 {
   position: relative;
   left: 1em;
@@ -205,6 +258,17 @@ button h2 {
   text-align: justify;
 }
 
+#filtre_anim:hover {
+  border: 0.2em solid #F2F2F2;
+  background-color: #0065FC;
+  border-radius: 2em;
+  width: 14em;
+  height: 2.5em;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: white;
+}
+
 #filtre_anim h2 {
   position: relative;
   left: 1em;
@@ -213,7 +277,7 @@ button h2 {
 #info {
   display: flex;
   justify-content: space-between;
-  width: 21.5em;
+  width: 25em;
 }
 
 #logo_info {
@@ -250,17 +314,24 @@ button h2 {
   flex-direction: row;
   flex-wrap: wrap;
   width: 50em;
-  height: 28em;
+  height: 50em;
   justify-content: space-between;
   align-items: center; 
   position: relative;
 }
+
+.légendes {
+  padding-left: 7%; 
+  line-height: 20%;
+  /* border: 1px solid green; */
+}
+
 /* -------------------------------------- cannebière */
 #cannebière_fond { 
   background-color: white;
   border-radius: 1em;
   width: 15em;
-  height: 11.5em;
+  height: 12em;
   padding: 0.25em;
   display: flex;
   flex-direction: column;
@@ -272,22 +343,24 @@ button h2 {
   border-top-left-radius: 1em; border-top-right-radius: 1em;
 }
 
-#cannebière_légende {
+/* #cannebière_légende {
   padding-left: 7%; 
   line-height: 20%;   
-}
+} */
 
 .quatre_étoiles {
   width: 35%;
   position: relative;
   bottom: 5px;
 }
+
 /* -------------------------------------- port */
+
 #port_fond { 
   background-color: white;
   border-radius: 1em;
   width: 15em;
-  height: 11.5em;
+  height: 12em;
   padding: 0.25em;
   display: flex;
   flex-direction: column;
@@ -299,22 +372,24 @@ button h2 {
   border-top-left-radius: 1em; border-top-right-radius: 1em;
 }
 
-#port_légende {
+/* #port_légende {
   padding-left: 7%; 
   line-height: 20%;   
-}
+} */
 
 .cinq_étoiles {
   width: 35%;
   position: relative;
   bottom: 5px;
 }
+
 /* -------------------------------------- mouettes */
+
 #mouettes_fond { 
   background-color: white;
   border-radius: 1em;
   width: 15em;
-  height: 11.5em;
+  height: 12em;
   padding: 0.25em;
   display: flex;
   flex-direction: column;
@@ -326,22 +401,24 @@ button h2 {
   border-top-left-radius: 1em; border-top-right-radius: 1em;
 }
 
-#mouettes_légende {
+/* #mouettes_légende {
   padding-left: 7%; 
   line-height: 20%; 
-}
+} */
 
 .quatre_étoiles {
   width: 35%;
   position: relative;
   bottom: 5px;
 }
+
 /* -------------------------------------- mer */
+
 #mer_fond { 
   background-color: white;
   border-radius: 1em;
   width: 15em;
-  height: 11.5em;
+  height: 12em;
   padding: 0.25em;
   display: flex;
   flex-direction: column;
@@ -353,22 +430,24 @@ button h2 {
   border-top-left-radius: 1em; border-top-right-radius: 1em;
 }
 
-#mer_légende {
+/* #mer_légende {
   padding-left: 7%; 
   line-height: 20%; 
-}
+} */
 
 .trois_étoiles {
   width: 35%;
   position: relative;
   bottom: 5px;
 }
+
 /* -------------------------------------- panier */
+
 #panier_fond { 
   background-color: white;
   border-radius: 1em;
   width: 15em;
-  height: 11.5em;
+  height: 12em;
   padding: 0.25em;
   display: flex;
   flex-direction: column;
@@ -380,22 +459,24 @@ button h2 {
   border-top-left-radius: 1em; border-top-right-radius: 1em;
 }
 
-#panier_légende {
+/* #panier_légende {
   padding-left: 7%; 
   line-height: 20%; 
-}
+} */
 
 .quatre_étoiles {
   width: 35%;
   position: relative;
   bottom: 5px;
 }
+
 /* -------------------------------------- amina */
+
 #amina_fond { 
   background-color: white;
   border-radius: 1em;
   width: 15em;
-  height: 11.5em;
+  height: 12em;
   padding: 0.25em;
   display: flex;
   flex-direction: column;
@@ -407,10 +488,10 @@ button h2 {
   border-top-left-radius: 1em; border-top-right-radius: 1em;
 }
 
-#amina_légende {
+/* #amina_légende {
   padding-left: 7%; 
   line-height: 20%; 
-}
+} */
 
 .cinq_étoiles {
   width: 35%;
@@ -475,6 +556,7 @@ button h2 {
   padding-left: 1em;
   padding-right: 1em;
   word-wrap: break-word;
+  /* border: 1px solid red; */
 }
 
 .étoiles_pop {
