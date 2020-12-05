@@ -8,19 +8,27 @@
       
       body { 
         width: 100%;
-        height: 100%;
+        height: auto;
         border: 2px solid green;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        
       }
       
       header {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
         height: 50em;
         border: 0.25em solid purple;
+        margin-bottom: 5em;
+      }
+
+      #tout_sauf_top {
+        /*border: 1px solid green;*/
+        width: auto;
+        height: 40em;
       }
       
       p {
@@ -36,23 +44,61 @@
       }
       
       h3 {
-        font-size: 1em;
+        font-size: 1.25em;
       }
       
       #top {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 25em;
+        /*border: 0.25em solid purple;*/
       }
-      
+
+      #haut_droite #sinscrire {
+        display: flex;
+        font-family: 'Raleway';
+        font-weight: bold;
+        color: #0065FC;
+        /*border: 0.25em solid pink;*/
+      }
+
+      #haut_droite {
+        /*border: 0.25em solid red;*/
+        display: flex;
+        width: 5em;
+      }
+
       #logo {
         width: 7em;
+        /*border: 0.25em solid yellowgreen;*/
+      }
+
+      #heb_et_act_top_smart {
+        display: flex;
+        width: 30em;
+      }
+
+      #heb_top_smart {
+        display: flex; 
+        justify-content: center;
+        border-bottom: 0.2em solid #0065FC;
+        width: 15em;
+        color: #0065FC;
+        font-weight: bold;
       }
       
+      #act_top_smart {
+        display: flex; 
+        justify-content: center;
+        border-bottom: 0.2em solid #F2F2F2;
+        width: 15em;
+      }
+
       #haut_gauche {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: flex-start;
         height: 12em;
         /* border: 1px solid red; */
         margin-bottom: 1em;
@@ -71,13 +117,18 @@
         margin-top: 2em;
         display: flex;
         flex-direction: column;
-        align-items: center;
-      }
-      
-      #haut_droite {
-        display: flex;
-        justify-content: space-between;
+        align-items: flex-start;
         width: 20em;
+        /*border: 1px solid red;*/
+        margin-bottom: 2em;
+      }
+
+      #heb_top {
+        display: none;
+      }
+
+      #act_top {
+        display: none;
       }
       
       #haut_droite p a:focus {
@@ -92,12 +143,6 @@
       
       a:visited {
         color: black;
-      }
-      
-      #sinscrire {
-        font-family: 'Raleway';
-        font-weight: bold;
-        color: #0065FC;
       }
       
       #barre_recherche {
@@ -125,28 +170,49 @@
       
       button {
         background-color: #0065FC;
-        color: white;
-        width: 7.5em;
-        border-top-right-radius: 0.75em;
-        border-bottom-right-radius: 0.75em;
+        color: #0065FC;
+        width: 3em;
+        border-radius: 0.75em;
         border: white;
         font-size: 1em;
         font-family: 'Raleway';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 2em;
       }
       
       button h2 {
         position: relative;
         bottom: 0.1em;
+        display: none;
+      }
+
+      #loupe {
+        width: 1em;
+        display: flex;
       }
       
       /* ------------------------------------------------------------ filtres */
       
       #filtres {
-        display: inline-block;
-        height: auto;
-        width: auto;
-        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        height: 20em;
+        width: 25em;
+        /*border: 1px solid black;*/
+        margin-top: 2em;
       } 
+
+      #filtre_éco, #filtre_fam, #filtre_rom, #filtre_anim {
+        margin-bottom: 1em;
+      }
+
+      #filtres_titre {
+        display: flex;
+        margin-right: 15em;
+      }
 
       /* -------------------------------------- filtre_éco */
       
@@ -284,17 +350,28 @@
         left: 1em;
       }
       
+      /* ------------------------------------------------------------ info */
+
       #info {
         display: flex;
-        justify-content: space-between;
         align-items: flex-start;
         width: 25em;
-        border: 1px solid red;
-        margin-top: 5em;
+        /*border: 1px solid red;*/
+        margin-top: 4em;
+        height: 3em;
       }
       
       #logo_info {
-        width: 1.5em;
+        width: 2em;
+        padding-right: 1em;
+        /*border: 1px solid blue;*/
+      }
+
+      #info p {
+        /*border: 1px solid green;*/
+        width: auto;
+        position: relative;
+        bottom: 1em;
       }
       
       /* ------------------------------------------------------------------------------ section_1 */
@@ -302,7 +379,7 @@
       #section_1 {
         display: flex;
         flex-direction: column-reverse;
-        height: 145em;
+        height: auto;
         border: 0.25em solid orangered;
       }
       
@@ -316,7 +393,7 @@
         /*border: 1px solid red;*/
         border-radius: 1em;
         padding: 2%;
-        height: 150em;
+        height: auto;
         background-color: white;
       }
       
@@ -402,6 +479,7 @@
         width: 100%;
         padding-bottom: 2em;
         padding-top: 1em;
+        height: auto;
         /* border: 1px solid blue; */
       }
       
@@ -430,16 +508,17 @@
         border: 1px solid white;
         border-radius: 1em;
         background-color: white;
-        height: 10em;
+        height: 11.5em;
         width: 25em;
         box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
+        border: 0.2em solid green;
       }
       
       .populaire_photos {
         max-width: 300px;
         border-top-left-radius: 1em;
         border-bottom-left-radius: 1em;
-        width: 12em;
+        width: 10em;
         border: 3px solid white; 
       }
       
@@ -450,14 +529,24 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        height: 10em;
+        height: 11.5em;
         border: 1px solid red; 
+        width: 15em;
+      }
+
+      #les_plus_populaires p {
         position: relative;
+        bottom: 2em;
       }
       
       .étoiles_pop {
         width: 5em;
-        padding-top: 2.5em;
+        border: 0.2em solid purple;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+        height: auto;
+        padding-top: 0em;
       }
       
       #lien_externe {
@@ -466,6 +555,16 @@
        
       /* ------------------------------------------------------------------------------ section_2 */
       
+      #section_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 0.25em solid red;
+        height: 120em;
+      }
+
+      /* ------------------------------------------------------------ activités */
+
       #Activités_à_Marseille {
         display: flex;
         flex-direction: column;
@@ -481,14 +580,6 @@
         padding-right: 7.5em;
       }
       
-      #section_2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border: 0.25em solid red;
-        height: 120em;
-      }
-
       /*#deuxième_colonne, #quatrième_colonne {
         display: none;
         border: 0.25em solid purple;
@@ -553,8 +644,6 @@
         padding-left: 1.5em;
       }
 
-
-
       /* ------------------------------------------------------------------------------ footer */
       
       footer {
@@ -575,7 +664,7 @@
         align-items: start;
         margin-left: 3em;
         margin-right: 3em;
-        height: 25em;
+        height: auto;
       
       }
       
@@ -592,6 +681,6 @@
         /*border: 1px solid orange;*/
         justify-content: space-between;
         align-items: start;
-        height: 25em;
+        height: auto;
       }
 }

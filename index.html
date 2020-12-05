@@ -13,28 +13,35 @@
       <div id="top">
         <img src="logo/Reservia.svg" id="logo" alt="logo du site">
         <div id="haut_droite">
-        <p><a href="#hebergements">Hébergements</a></p>
-        <p><a href="#Activités_à_Marseille">Activités</a></p>
-        <div id="sinscrire"><p>S'inscrire</p></div>
+            <div id="heb_top"><p><a href="#hebergements">Hébergements</a></p></div>
+            <div id="act_top"><p><a href="#Activités_à_Marseille">Activités</a></p></div>
+            <div id="sinscrire"><p>S'inscrire</p></div>
         </div>
+      </div> <!-- top -->
+
+      <div id="heb_et_act_top_smart">
+        <div id="heb_top_smart"><p>Hébergements</p></div>
+        <div id="act_top_smart"><p>Activités</p></div>
       </div>
+        
+        <div id="tout_sauf_top">
 
           <div id="deux_premières_phrases">
           <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
           <p>En plein centre-ville ou pleine nature</p>
-          </div>
+          </div> <!-- deux_premières_phrases -->
 
-        <div id="haut_gauche">          
+          <div id="haut_gauche">          
               <div id="barre_recherche">
                 <img src="logo/map-marker-alt-solid.svg" id="marker" alt="marqueur">
                 <input type="text" id="recherche" name="recherche" required
                   minlength="4" maxlength="18" size="25" required size="50"">
-                <button type="button"><h2>Rechercher</h2></button>
+                <button type="button"><h2>Rechercher</h2><img src="logo/loupe.svg" id="loupe" alt="loupe_barre_de_recherche"></button>
               </div>
             
           
               <div id="filtres">
-                    <h2>Filtres</h2>
+                    <div id="filtres_titre"><h2>Filtres</h2></div>
                       <div id="filtre_éco">
                         <div class="pastille">
                           <div class="cercle">
@@ -67,14 +74,16 @@
                         </div>
                         <h2>Animaux autorisés</h2>
                       </div>
+              </div> <!-- filtres -->
+
+            <div id="info">
+            <img src="logo/info.svg" id="logo_info" alt="logo_info">    
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
-          <div id="info">
-          <img src="logo/info.svg" id="logo_info" alt="logo_info">    
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
-          </div>
+          </div> <!-- haut_gauche -->
 
-         </div>
+        </div> <!-- tout_sauf_top -->
 
     </header>
 
@@ -161,25 +170,25 @@
             <div class="vignette">
               <img src="hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="populaire_photos" alt="chambre_soleil_matin">
                 <figcaption>
-                <h3>Hôtel Le soleil du matin</h3>
-                <p>Nuit à partir de 128€</p>
-                <img src="logo/5_stars.svg" class="étoiles_pop" alt="cinq_étoiles">
+                  <h3>Hôtel Le soleil du matin</h3>
+                  <p>Nuit à partir de 128€</p>
+                  <img src="logo/5_stars.svg" class="étoiles_pop" alt="cinq_étoiles">
                 </figcaption>
             </div>
             <div class="vignette">
               <img src="hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="populaire_photos" alt="chambre_cœur_eau">
                 <figcaption>
-                <h3>Au cœur de l'eau Chambres d'hôtes</h3>
-                <p>Nuit à partir de 71€</p>
-                <img src="logo/4_stars.svg" class="étoiles_pop" alt="quatre_étoiles">
+                  <h3>Au cœur de l'eau Chambres d'hôtes</h3>
+                  <p>Nuit à partir de 71€</p>
+                  <img src="logo/4_stars.svg" class="étoiles_pop" alt="quatre_étoiles">
                 </figcaption>
             </div>
             <div class="vignette">
               <img src="hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="populaire_photos" alt="chambre_bleu_blanc">
                 <figcaption>
-                <h3>Hôtel Tout bleu et Blanc</h3>
-                <p>Nuit à partir de 68€</p>
-                <img src="logo/4_stars.svg" class="étoiles_pop" alt="quatre_étoiles">
+                  <h3>Hôtel Tout bleu et Blanc</h3>
+                  <p>Nuit à partir de 68€</p>
+                  <img src="logo/4_stars.svg" class="étoiles_pop" alt="quatre_étoiles">
                 </figcaption>
             </div>
           </div>        

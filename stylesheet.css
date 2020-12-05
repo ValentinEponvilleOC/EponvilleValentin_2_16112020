@@ -45,6 +45,10 @@ h3 {
   width: 7em;
 }
 
+#heb_et_act_top_smart {
+  display: none;
+}
+
 #haut_gauche {
   display: flex;
   flex-direction: column;
@@ -129,6 +133,10 @@ button {
 button h2 {
   position: relative;
   bottom: 0.1em;
+}
+
+#loupe {
+  display: none;
 }
 
 /* ------------------------------------------------------------ filtres */
