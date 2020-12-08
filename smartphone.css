@@ -9,7 +9,7 @@
       body { 
         width: 100%;
         height: auto;
-        border: 2px solid green;
+        /*border: 2px solid green;*/
         display: flex;
         flex-direction: column;
         
@@ -20,9 +20,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 50em;
-        border: 0.25em solid purple;
-        margin-bottom: 5em;
+        height: auto;
+        /*border: 0.25em solid purple;*/
       }
 
       #tout_sauf_top {
@@ -81,10 +80,14 @@
       #heb_top_smart {
         display: flex; 
         justify-content: center;
+        border-bottom: 0.2em solid #F2F2F2;
+        width: 15em;     
+      }
+
+      #heb_top_smart:hover {
         border-bottom: 0.2em solid #0065FC;
         width: 15em;
         color: #0065FC;
-        font-weight: bold;
       }
       
       #act_top_smart {
@@ -94,12 +97,19 @@
         width: 15em;
       }
 
+      #act_top_smart:hover {
+        border-bottom: 0.2em solid #0065FC;
+        width: 15em;
+        color: #0065FC;
+      }
+
       #haut_gauche {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         height: 12em;
+        width: auto;
         /* border: 1px solid red; */
         margin-bottom: 1em;
       }
@@ -107,10 +117,6 @@
       #haut_gauche h1 {
         position: relative;
         border: 1px solid green;
-      }
-      
-      #haut_gauche p {
-        /* border: 1px solid blue; */
       }
       
       #deux_premières_phrases {
@@ -131,24 +137,27 @@
         display: none;
       }
       
-      #haut_droite p a:focus {
-        color:  #0065FC;
-        font-weight: bold;
-      }
-      
       a:link {
-        text-decoration: none;
         color: black;
       }
       
       a:visited {
         color: black;
       }
+
+      #heb_top_smart a:visited {
+        display: flex; 
+        justify-content: center;
+        border-bottom: 0.2em solid #0065FC;
+        width: 15em;
+        font-weight: bold;
+      }
       
       #barre_recherche {
         display: flex;
-        height: 2.75em; 
+        height: 3.5em; 
         justify-content: center;
+        
       }
       
       #marker {
@@ -163,15 +172,17 @@
       #recherche {
         font-family: 'Raleway';
         font-weight: bold;
-        font-size: 1em;
+        font-size: 1.25em;
         border: 1px solid #F2F2F2;
-        text-align: center;
+        text-align: start;
+        width: 15em;
+        padding-left: 1em;
       }
       
       button {
         background-color: #0065FC;
         color: #0065FC;
-        width: 3em;
+        width: 3.5em;
         border-radius: 0.75em;
         border: white;
         font-size: 1em;
@@ -276,6 +287,7 @@
         display: flex;
         align-items: center;
         text-align: justify;
+        margin-right: 3.5em;
       }
       
       #filtre_fam:hover {
@@ -357,7 +369,7 @@
         align-items: flex-start;
         width: 25em;
         /*border: 1px solid red;*/
-        margin-top: 4em;
+        margin-top: 2em;
         height: 3em;
       }
       
@@ -380,7 +392,11 @@
         display: flex;
         flex-direction: column-reverse;
         height: auto;
-        border: 0.25em solid orangered;
+        /*border: 0.25em solid orangered;*/
+      }
+
+      #section_1 h2 {
+        padding-top: 1em;
       }
       
       /* ------------------------------------------------------------ hébergements */
@@ -393,6 +409,7 @@
         /*border: 1px solid red;*/
         border-radius: 1em;
         padding: 2%;
+        margin-top: 1em;
         height: auto;
         background-color: white;
       }
@@ -511,7 +528,7 @@
         height: 11.5em;
         width: 25em;
         box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-        border: 0.2em solid green;
+        /*border: 0.2em solid green;*/
       }
       
       .populaire_photos {
@@ -530,7 +547,7 @@
         flex-direction: column;
         justify-content: flex-start;
         height: 11.5em;
-        border: 1px solid red; 
+        /*border: 1px solid red;*/ 
         width: 15em;
       }
 
@@ -541,7 +558,7 @@
       
       .étoiles_pop {
         width: 5em;
-        border: 0.2em solid purple;
+        /*border: 0.2em solid purple;*/
         display: flex;
         align-items: center;
         margin-bottom: 1em;
@@ -559,7 +576,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 0.25em solid red;
+        /*border: 0.25em solid red;*/
         height: 120em;
       }
 
@@ -571,8 +588,8 @@
         justify-content: flex-start;
         align-items: center;
         margin-top: 2em;
-        border: 0.25em solid pink;
-        height: 125em;
+        /*border: 0.25em solid pink;*/
+        height: 105em;
       }
 
       #Activités_à_Marseille h1 {
@@ -580,21 +597,31 @@
         padding-right: 7.5em;
       }
       
-      /*#deuxième_colonne, #quatrième_colonne {
+      #deuxième_colonne, #quatrième_colonne {
         display: none;
-        border: 0.25em solid purple;
-      }*/
-      
-      .vignettes_act {
-        display: flex;
-        flex-direction: column;
-        border-radius: 1em;
-        width: 25em;
-        height: 15em;
-        box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-        border: 0.25em solid blue;
       }
 
+      #vieux_photo {
+        display: none;
+      }
+
+      #national_photo {
+        display: none;
+      }
+
+      #vieux_non_rognée {
+        flex: 1em;
+        position: relative;
+        bottom: 1em;
+        /*border: 0.2em solid red;*/
+      }
+
+      #calanques_photo {
+        flex: 2em;
+        position: relative;
+        bottom: 1em;
+        /*border: 0.2em solid red;*/
+      }
       
       #section_2 .box_photo {
         overflow: hidden;
@@ -602,15 +629,38 @@
         height: 10.5em;
         border-top-left-radius: 1em; border-top-right-radius: 1em;
         /*border: 1px solid orangered;*/
+        display: flex;
+        justify-content: center; align-items: flex-start;
       }
 
-      .vignettes_act img {
-        width: 25em;
-        height: 11em;
-        border-top-left-radius: 1em;
-        border-top-right-radius: 1em;
+      #box_photo_vieux_port {
+        display: none;
       }
-      
+
+      #box_photo_vieux_port_smart {
+        overflow: hidden;
+        width: 25em;
+        height: 10.5em;
+        border-top-left-radius: 1em; border-top-right-radius: 1em;
+        /*border: 1px solid orangered;*/
+        display: flex;
+        justify-content: center; align-items: flex-start;
+      }
+
+      #box_photo_calanques {
+        display: none;
+      }
+
+      #box_photo_calanques_smart {
+        overflow: hidden;
+        width: 25em;
+        height: 10.5em;
+        border-top-left-radius: 1em; border-top-right-radius: 1em;
+        /*border: 1px solid orangered;*/
+        display: flex;
+        justify-content: center; align-items: flex-start;
+      }
+
       #section_2 figcaption {
         /*border: 0.25em solid cyan;*/
         height: 4.5em;
@@ -619,28 +669,45 @@
         justify-content: center;
       }
 
-      .vignettes_act h3 {
-        padding-left: 1.5em;
-      }
-
-      .vignettes_act_empilées {
+      .vignettes_act {
         display: flex;
         flex-direction: column;
         border-radius: 1em;
         width: 25em;
         height: 15em;
         box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
-        border: 0.25em solid blue;
+        /*border: 0.25em solid blue;*/
       }
 
-      .vignettes_act_empilées img {
+      .vignettes_act img {
+        width: 20em;
+        bottom: 10em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+      }
+      
+      .vignettes_act h3 {
+        padding-left: 1.5em;
+      }
+
+      .vignettes_act_smart {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1em;
+        width: 25em;
+        height: 15em;
+        box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
+        /*border: 0.25em solid blue;*/
+      }
+
+      .vignettes_act_smart img {
         width: 25em;
         height: 11em;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
       }
 
-      .vignettes_act_empilées h3 {
+      .vignettes_act_smart h3 {
         padding-left: 1.5em;
       }
 

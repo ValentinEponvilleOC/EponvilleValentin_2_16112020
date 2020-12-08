@@ -63,10 +63,6 @@ h3 {
   border: 1px solid green;
 }
 
-#haut_gauche p {
-  /* border: 1px solid blue; */
-}
-
 #deux_premières_phrases {
   margin-top: 2em;
 }
@@ -455,6 +451,12 @@ button h2 {
   height: 27em;
 }
 
+#deuxième_colonne, #quatrième_colonne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .vignettes_act {
   display: flex;
   flex-direction: column;
@@ -468,25 +470,20 @@ button h2 {
   border-top-right-radius: 1em;
 }
 
-/*#pomègues, #friout {
-  display: flex;
-  flex-direction: column;
-}*/
-
-#deuxième_colonne {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#quatrième_colonne {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .vignettes_act h3 {
   padding-left: 1.5em;
+}
+
+.vignettes_act_smart {
+  display: none;
+}
+
+#box_photo_vieux_port_smart {
+  display: none;
+}
+
+#box_photo_calanques_smart {
+  display: none;
 }
 
 /* ------------------------------------------------------------------------------ footer */
