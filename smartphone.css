@@ -1,6 +1,7 @@
-@media screen and (max-width: 1024px)
-{
-    @font-face {
+      /*@media all and (max-width: 750px)
+      {*/
+
+      @font-face {
         font-family: 'Raleway';
         src: url('static/Raleway-Regular.ttf');
         src: url('static/Raleway-Bold.ttf');
@@ -569,7 +570,7 @@
       #lien_externe {
         width: 1.5em;
       }
-       
+      
       /* ------------------------------------------------------------------------------ section_2 */
       
       #section_2 {
@@ -577,7 +578,7 @@
         flex-direction: column;
         justify-content: space-between;
         /*border: 0.25em solid red;*/
-        height: 120em;
+        height: 100em;
       }
 
       /* ------------------------------------------------------------ activités */
@@ -589,7 +590,7 @@
         align-items: center;
         margin-top: 2em;
         /*border: 0.25em solid pink;*/
-        height: 105em;
+        height: auto;
       }
 
       #Activités_à_Marseille h1 {
@@ -624,7 +625,6 @@
       }
       
       #section_2 .box_photo {
-        overflow: hidden;
         width: 25em;
         height: 10.5em;
         border-top-left-radius: 1em; border-top-right-radius: 1em;
@@ -750,4 +750,4 @@
         align-items: start;
         height: auto;
       }
-}
+      }
