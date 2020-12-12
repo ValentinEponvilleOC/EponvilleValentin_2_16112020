@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" media="screen and (min-width: 1366px)" href="stylesheet.css" />
@@ -35,9 +36,8 @@
           <div id="haut_gauche">          
               <div id="barre_recherche">
                 <img src="logo/map-marker-alt-solid.svg" id="marker" alt="marqueur">
-                <input type="text" id="recherche" name="recherche" required
-                  minlength="4" maxlength="18" size="25" required size="50"">
-                <button type="button"><h2>Rechercher</h2><img src="logo/loupe.svg" id="loupe" alt="loupe_barre_de_recherche"></button>
+                <input type="text" id="recherche" name="recherche" required minlength="4" required maxlength="18" size="25" required size="50">
+                <button type="button"><div id="mot_bouton">Rechercher</div><img src="logo/loupe.svg" id="loupe" alt="loupe_barre_de_recherche"></button>
               </div>
             
           
@@ -94,68 +94,56 @@
       <div id="vignettes">
 
           <div class="fond"><a href="#">
-            <div class="box_photo"><img src="hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="photo_hébergements" alt="chambre_Cannebière"></div>
-              <div class="légendes">
-                <figcaption>
+            <div class="box_photo"><img src="hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="photo_hébergements" alt="chambre_Cannebière"></div>
+              <div class="légendes">               
                 <h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de 25€</p>
                 <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
-                </figcaption>
               </div></a>
           </div>
 
           <div class="fond"><a href="#">
-            <div class="box_photo"><img src="hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="photo_hébergements" alt="chambre_port"></div>
+            <div class="box_photo"><img src="hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="photo_hébergements" alt="chambre_port"></div>
               <div class="légendes">
-                <figcaption>
                 <h3>Hôtel du port</h3>
                 <p>Nuit à partir de 52€</p>
                 <img src="logo/5_stars.svg" class="cinq_étoiles" alt="cinq_étoiles">
-                </figcaption>
               </div></a>
           </div>
 
           <div class="fond"><a href="#">
-            <div class="box_photo"><img src="hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" class="photo_hébergements" alt="chambre_mouettes"></div>
+            <div class="box_photo"><img src="hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="photo_hébergements" alt="chambre_mouettes"></div>
               <div class="légendes">
-                <figcaption>
                 <h3>Hôtel Les mouettes</h3>
                 <p>Nuit à partir de 76€</p>
                 <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
-                </figcaption>
               </div></a>
           </div>  
 
           <div class="fond"><a href="#">
             <div class="box_photo"><img src="hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="photo_hébergements" alt="chambre_de_la_mer"></div>
               <div class="légendes">
-                <figcaption>
                 <h3>Hôtel de la mer</h3>
                 <p>Nuit à partir de 46€</p>
                 <img src="logo/3_stars.svg" class="trois_étoiles" alt="trois_étoiles">
-                </figcaption>
               </div></a>
           </div>
 
           <div class="fond"><a href="#">
             <div class="box_photo"><img src="hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="photo_hébergements" alt="chambre_Panier"></div>
               <div class="légendes">
-                <figcaption>
                 <h3>Auberge Le Panier</h3>
                 <p>Nuit à partir de 23€</p>
                 <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
-                </figcaption>
               </div></a>
           </div>
 
           <div class="fond"><a href="#">
             <div class="box_photo"><img src="hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="photo_hébergements" alt="chambre_Amina"></div>
-              <div class="légendes"">
-                <figcaption>
+              <div class="légendes">
                 <h3>Hôtel chez Amina</h3>
                 <p>Nuit à partir de 96€</p>
                 <img src="logo/5_stars.svg" class="cinq_étoiles" alt="cinq_étoiles">
-                </figcaption>
               </div></a>
           </div> 
       </div> <!-- div vignettes --> 
@@ -170,27 +158,27 @@
           <div id="ensemble_vignettes">
             <div class="vignette">
               <img src="hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="populaire_photos" alt="chambre_soleil_matin">
-                <figcaption>
+                <div class="légendes_populaires">
                   <h3>Hôtel Le soleil du matin</h3>
                   <p>Nuit à partir de 128€</p>
                   <img src="logo/5_stars.svg" class="étoiles_pop" alt="cinq_étoiles">
-                </figcaption>
+                </div>
             </div>
             <div class="vignette">
               <img src="hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="populaire_photos" alt="chambre_cœur_eau">
-                <figcaption>
+              <div class="légendes_populaires">
                   <h3>Au cœur de l'eau Chambres d'hôtes</h3>
                   <p>Nuit à partir de 71€</p>
                   <img src="logo/4_stars.svg" class="étoiles_pop" alt="quatre_étoiles">
-                </figcaption>
+              </div>      
             </div>
             <div class="vignette">
               <img src="hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="populaire_photos" alt="chambre_bleu_blanc">
-                <figcaption>
+              <div class="légendes_populaires">
                   <h3>Hôtel Tout bleu et Blanc</h3>
                   <p>Nuit à partir de 68€</p>
                   <img src="logo/4_stars.svg" class="étoiles_pop" alt="quatre_étoiles">
-                </figcaption>
+              </div>
             </div>
           </div>        
     </div>  <!-- les_plus_populaires -->
@@ -205,68 +193,58 @@
         <div class="vignettes_act"><a href="#">
           <div id="box_photo_vieux_port"><img src="activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" id="vieux_photo" alt="bâteaux_dans_Vieux_Port"></div>
           <div id="box_photo_vieux_port_smart"><img src="activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash_non_retouché.jpg" id="vieux_non_rognée" alt="photo du vieux port non rognée"></div>
-          <figcaption>
           <h3>Vieux Port</h3>
-          </figcaption></a>
+          </a>
         </div>
         <div id="deuxième_colonne">
           <div class="vignettes_act"><a href="#">
-            <div class="box_photo"><img src="activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" id="pomègues_photo" alt="fort_de_pomègues"></div>
-            <figcaption>
+            <div class="box_photo"><img src="activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="pomègues_photo" alt="fort_de_pomègues"></div>
             <h3>Fort de Pomègues</h3>
-            </figcaption></a>
+            </a>
           </div>    
           <div class="vignettes_act"><a href="#">    
-            <div class="box_photo"><img src="activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" id="îles_photo" alt="îles_du_friout"></div>
-            <figcaption>
+            <div class="box_photo"><img src="activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="îles_photo" alt="îles_du_friout"></div>
             <h3>Îles du Friout</h3>
-            </figcaption></a>
+            </a>
           </div>  
         </div>
         <div class="vignettes_act_smart"><a href="#">
-          <div class="box_photo"><img src="activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" id="pomègues_photo" alt="fort_de_pomègues"></div>
-          <figcaption>
+          <div class="box_photo"><img src="activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="pomègues_photo" alt="fort_de_pomègues"></div>
           <h3>Fort de Pomègues</h3>
-          </figcaption></a>
+          </a>
         </div>    
         <div class="vignettes_act_smart"><a href="#">    
-          <div class="box_photo"><img src="activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" id="îles_photo" alt="îles_du_friout"></div>
-          <figcaption>
+          <div class="box_photo"><img src="activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="îles_photo" alt="îles_du_friout"></div>
           <h3>Îles du Friout</h3>
-          </figcaption></a>
+          </a>
         </div>  
         <div class="vignettes_act"><a href="#">
           <div id="box_photo_calanques"><img src="activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" id="national_photo" alt="parc_national_calanques"></div>
           <div id="box_photo_calanques_smart"><img src="activites/4_small/calanques.jpg" id="calanques_photo" alt="photo des calanques non rognée"></div>
-          <figcaption>
           <h3>Parc National des Calanques</h3>
-          </figcaption></a>
+          </a>
         </div>
         <div id="quatrième_colonne">
           <div class="vignettes_act"><a href="#">   
-              <div class="box_photo"><img src="activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" id="dame_photo" alt="notre_dame_garde"></div>
-              <figcaption>
+              <div class="box_photo"><img src="activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="dame_photo" alt="notre_dame_garde"></div>
               <h3>Notre-Dame-de-la-Garde</h3>
-              </figcaption></a>
+              </a>
           </div>    
           <div class="vignettes_act"><a href="#">    
-              <div class="box_photo"><img src="activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" id="parc_photo" alt="bâtiment du parc Longchamp"></div>
-              <figcaption>
+              <div class="box_photo"><img src="activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="parc_photo" alt="bâtiment du parc Longchamp"></div>
               <h3>Parc Longchamp</h3>
-              </figcaption></a>
+              </a>
           </div>
         </div>
           <div class="vignettes_act_smart"><a href="#">   
-            <div class="box_photo"><img src="activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" id="dame_photo" alt="notre_dame_garde"></div>
-            <figcaption>
+            <div class="box_photo"><img src="activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="dame_photo" alt="notre_dame_garde"></div>
             <h3>Notre-Dame-de-la-Garde</h3>
-            </figcaption></a>
+            </a>
         </div>    
           <div class="vignettes_act_smart"><a href="#">    
-              <div class="box_photo"><img src="activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" id="parc_photo" alt="bâtiment du parc Longchamp"></div>
-              <figcaption>
+              <div class="box_photo"><img src="activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="parc_photo" alt="bâtiment du parc Longchamp"></div>
               <h3>Parc Longchamp</h3>
-              </figcaption></a>
+              </a>
           </div>
 
     </div>

@@ -175,11 +175,7 @@ button {
   border: white;
   font-size: 1em;
   font-family: 'Raleway';
-}
-
-button h2 {
-  position: relative;
-  bottom: 0.1em;
+  font-weight: bold;
 }
 
 #loupe {
@@ -473,7 +469,6 @@ button h2 {
 
 .vignette {
   display: flex;
-  
   border: 1px solid white;
   border-radius: 1em;
   background-color: white;
@@ -491,23 +486,13 @@ button h2 {
   border: 3px solid white; 
 }
 
-#les_plus_populaires figcaption {
+.légendes_populaires {
   padding-left: 1em;
   padding-right: 1em;
   word-wrap: break-word;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   height: 5em;
   width: auto;
   /*border: 1px solid red;*/
-}
-
-#les_plus_populaires h3, #les_plus_populaires p, .étoiles_pop {
-  /*border: 1px solid purple;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .étoiles_pop {

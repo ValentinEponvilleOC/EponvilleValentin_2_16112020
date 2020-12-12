@@ -13,8 +13,6 @@ flex-direction: column;
 height: 50em;
 }
 
-
-
 p {
 font-size: 0.9em;
 }
@@ -164,11 +162,7 @@ button {
   border: white;
   font-size: 1em;
   font-family: 'Raleway';
-}
-
-button h2 {
-  position: relative;
-  bottom: 0.1em;
+  font-weight: bold;
 }
 
 #loupe {
@@ -457,9 +451,10 @@ button h2 {
   border: 3px solid white; 
 }
 
-#les_plus_populaires figcaption {
+.légendes_populaires { 
   padding-left: 1em;
   padding-right: 1em;
+  padding-bottom: 1em;
   word-wrap: break-word;
   /* border: 1px solid red; */
 }
@@ -472,7 +467,6 @@ button h2 {
 #lien_externe {
   width: 1.5em;
 }
-
 
 /* ------------------------------------------------------------------------------ section 2 (Activités à Marseille) */
 
