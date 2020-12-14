@@ -239,7 +239,6 @@ button {
 
 .cercle {
   background-color: #DEEBFF;
-  border: 1px solid #DEEBFF;
   border-radius: 50%;
   width: 3em;  
   height: 2.75em;
@@ -363,7 +362,6 @@ button {
   flex-direction: column;
   align-content: space-between;
   justify-content: space-between;
-  border: #F2F2F2;
   background-color:  #F2F2F2;
   border-radius: 1em;
   padding: 2%;
@@ -383,8 +381,7 @@ button {
   flex-wrap: wrap;
   width: auto;
   height: 28em;
-  justify-content: space-between;
-  align-items: space-between; 
+  justify-content: space-between; 
   position: relative;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -473,7 +470,6 @@ button {
 
 .vignette {
   display: flex;
-  border: 1px solid white;
   border-radius: 1em;
   background-color: white;
   height: 13em;

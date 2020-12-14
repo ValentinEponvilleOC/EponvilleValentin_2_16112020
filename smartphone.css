@@ -241,7 +241,6 @@ button { /* l'ensemble du bouton */
   align-items: center;
   text-align: justify;
   z-index: 4;
-  flex: -2em;
 }
 
 #filtre_éco:hover {
