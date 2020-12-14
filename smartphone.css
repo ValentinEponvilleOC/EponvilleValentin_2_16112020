@@ -196,9 +196,10 @@ button { /* l'ensemble du bouton */
   align-items: center;
   position: relative;
   right: 2em;
+  
 }
 
-#mot_bouton {
+.bouton_1 {
   display: none;
 }
 

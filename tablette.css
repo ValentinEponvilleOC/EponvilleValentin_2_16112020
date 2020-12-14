@@ -178,6 +178,10 @@ button {
   font-weight: bold;
 }
 
+.bouton_2 {
+  display: none;
+}
+
 #loupe {
   display: none;
 }
