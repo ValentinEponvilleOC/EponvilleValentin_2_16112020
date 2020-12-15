@@ -2,52 +2,53 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" media="screen and (min-width: 1366px)" href="stylesheet.css" />
-  <link rel="stylesheet" media="screen and (max-width: 750px)" href="smartphone.css" />
-  <link rel="stylesheet" media="screen and (min-width: 750px) and (max-width: 1366px)" href="tablette.css" />
+  <link rel="stylesheet" media="screen and (min-width: 1400px)" href="stylesheet.css" />
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="smartphone.css" />
+  <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1400px)" href="tablette.css" />
   <script src="https://kit.fontawesome.com/432bec7c96.js" crossorigin="anonymous"></script>
   <title>Site Reservia</title>
 </head>
 
 <body> 
     <header>
-      <div id="top">
-        <img src="logo/Reservia.svg" id="logo" alt="logo du site">
-        <div id="haut_droite">
-            <a href="#hebergements"><div id="heb_top"><p>Hébergements</p></div></a>
-            <a href="#Activités_à_Marseille"><div id="act_top"><p>Activités</p></div></a>
-            <div id="sinscrire"><p>S'inscrire</p></div>
-        </div>
-      </div> <!-- top -->
+      
+        <nav id="top">
+          <img src="logo/Reservia.svg" id="logo" alt="logo du site">
+          <div id="haut_droite">
+              <a href="#hebergements"><div id="heb_top"><h2>Hébergements</h2></div></a>
+              <a href="#Activités_à_Marseille"><div id="act_top"><h2>Activités</h2></div></a>
+              <div id="sinscrire"><h2>S'inscrire</h2></div>
+          </div>
+        </nav> <!-- top -->
 
-      <div id="heb_et_act_top_smart">
-        <a href="#hebergements"><div id="heb_top_smart"><p>Hébergements</p></div></a>
-        <a href="#Activités_à_Marseille"><div id="act_top_smart"><p>Activités</p></div></a>
-      </div>
+        <nav id="heb_et_act_top_smart">
+          <a href="#hebergements"><div id="heb_top_smart"><h2>Hébergements</h2></div></a>
+          <a href="#Activités_à_Marseille"><div id="act_top_smart"><h2>Activités</h2></div></a>
+        </nav>
         
         <div id="tout_sauf_top">
 
           <div id="deux_premières_phrases">
-          <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
-          <p>En plein centre-ville ou pleine nature</p>
+            <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
+            <p>En plein centre-ville ou pleine nature</p>
           </div> <!-- deux_premières_phrases -->
 
           <div id="haut_gauche">          
               <div id="barre_recherche">
                 <img src="logo/map-marker-alt-solid.svg" id="marker" alt="marqueur">
-                <input type="text" id="recherche" name="recherche" minlength="4" maxlength="18" size="25" required>
+                <input type="text" id="recherche" name="recherche" maxlength="18" size="25">
                 <button type="button" class="bouton_1">Rechercher</button>  
                 <button type="button" class="bouton_2"><img src="logo/loupe.svg" id="loupe" alt="loupe_barre_de_recherche"></button>
               </div>
               <div id="filtres">
-                    <div id="filtres_titre"><h2>Filtres</h2></div>
+                    <div id="filtres_titre"><h3>Filtres</h3></div>
                       <div id="filtre_éco">
                         <div class="pastille">
                           <div class="cercle">
                           <img src="logo/billet.svg" id="billet" alt="section_économique">
                           </div>
                         </div>
-                        <h2>Économique</h2>
+                        <h3>Économique</h3>
                       </div>
                       <div id="filtre_fam">
                         <div class="pastille">
@@ -55,7 +56,7 @@
                           <img src="logo/enfant.svg" id="enfant" alt="section_familiale">
                           </div>
                         </div>
-                        <h2>Familial</h2>
+                        <h3>Familial</h3>
                       </div>  
                       <div id="filtre_rom">
                         <div class="pastille">
@@ -63,7 +64,7 @@
                           <img src="logo/coeur.svg" id="coeur" alt="section_romantique">
                           </div>
                         </div>
-                        <h2>Romantique</h2>
+                        <h3>Romantique</h3>
                       </div>
                       <div id="filtre_anim">
                         <div class="pastille">
@@ -71,13 +72,13 @@
                           <img src="logo/chien.svg" id="chien" alt="section_animaux">
                           </div>
                         </div>
-                        <h2>Animaux autorisés</h2>
+                        <h3>Animaux autorisés</h3>
                       </div>
               </div> <!-- filtres -->
 
             <div id="info">
-            <img src="logo/info.svg" id="logo_info" alt="logo_info">    
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+              <img src="logo/info.svg" id="logo_info" alt="logo_info">    
+              <data value="500"><p>Plus de 500 logements sont disponibles dans cette ville</p></data>
             </div>
 
           </div> <!-- haut_gauche -->
@@ -85,17 +86,17 @@
         </div> <!-- tout_sauf_top -->
 
     </header>
-
-  <div id="section_1">
+<main>
+  <section id="section_1">
     <div id="hebergements"> <!--Hébergement à Marseille-->
-      <h1>Hébergements à Marseille</h1>
+      <h2>Hébergements à Marseille</h2>
       <div id="vignettes">
 
           <div class="fond"><a href="#">
             <div class="box_photo"><img src="hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="photo_hébergements" alt="chambre_Cannebière"></div>
               <div class="légendes">               
                 <h3>Auberge la Cannebière</h3>
-                <p>Nuit à partir de 25€</p>
+                <data value="25"><p>Nuit à partir de 25€</p></data>
                 <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
               </div></a>
           </div>
@@ -104,7 +105,7 @@
             <div class="box_photo"><img src="hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="photo_hébergements" alt="chambre_port"></div>
               <div class="légendes">
                 <h3>Hôtel du port</h3>
-                <p>Nuit à partir de 52€</p>
+                <data value="52"></data><p>Nuit à partir de 52€</p></data>
                 <img src="logo/5_stars.svg" class="cinq_étoiles" alt="cinq_étoiles">
               </div></a>
           </div>
@@ -113,7 +114,7 @@
             <div class="box_photo"><img src="hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="photo_hébergements" alt="chambre_mouettes"></div>
               <div class="légendes">
                 <h3>Hôtel Les mouettes</h3>
-                <p>Nuit à partir de 76€</p>
+                <data value="76"><p>Nuit à partir de 76€</p></data>
                 <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
               </div></a>
           </div>  
@@ -122,7 +123,7 @@
             <div class="box_photo"><img src="hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="photo_hébergements" alt="chambre_de_la_mer"></div>
               <div class="légendes">
                 <h3>Hôtel de la mer</h3>
-                <p>Nuit à partir de 46€</p>
+                <data value="46"><p>Nuit à partir de 46€</p></data>
                 <img src="logo/3_stars.svg" class="trois_étoiles" alt="trois_étoiles">
               </div></a>
           </div>
@@ -131,7 +132,7 @@
             <div class="box_photo"><img src="hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="photo_hébergements" alt="chambre_Panier"></div>
               <div class="légendes">
                 <h3>Auberge Le Panier</h3>
-                <p>Nuit à partir de 23€</p>
+                <data value="23"><p>Nuit à partir de 23€</p></data>
                 <img src="logo/4_stars.svg" class="quatre_étoiles" alt="quatre_étoiles">
               </div></a>
           </div>
@@ -140,17 +141,17 @@
             <div class="box_photo"><img src="hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="photo_hébergements" alt="chambre_Amina"></div>
               <div class="légendes">
                 <h3>Hôtel chez Amina</h3>
-                <p>Nuit à partir de 96€</p>
+                <data value="96"><p>Nuit à partir de 96€</p></data>
                 <img src="logo/5_stars.svg" class="cinq_étoiles" alt="cinq_étoiles">
               </div></a>
           </div> 
       </div> <!-- div vignettes --> 
-      <h2>Afficher plus</h2>
+      <h3>Afficher plus</h3>
     </div> <!-- div hébergements -->
   
     <div id="les_plus_populaires">
       <div id="titre_chart"> 
-        <h1>Les plus populaires</h1>
+        <h2>Les plus populaires</h2>
         <img src="logo/chart-line-solid.svg" id="lien_externe" alt="lien externe">
       </div>  
           <div id="ensemble_vignettes">
@@ -158,7 +159,7 @@
               <img src="hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="populaire_photos" alt="chambre_soleil_matin">
                 <div class="légendes_populaires">
                   <h3>Hôtel Le soleil du matin</h3>
-                  <p>Nuit à partir de 128€</p>
+                  <data value="128"><p>Nuit à partir de 128€</p></data>
                   <img src="logo/5_stars.svg" class="étoiles_pop" alt="cinq_étoiles">
                 </div>
             </div>
@@ -166,7 +167,7 @@
               <img src="hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="populaire_photos" alt="chambre_cœur_eau">
               <div class="légendes_populaires">
                   <h3>Au cœur de l'eau Chambres d'hôtes</h3>
-                  <p>Nuit à partir de 71€</p>
+                  <data value="71"><p>Nuit à partir de 71€</p></data>
                   <img src="logo/4_stars.svg" class="étoiles_pop" alt="quatre_étoiles">
               </div>      
             </div>
@@ -174,19 +175,19 @@
               <img src="hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="populaire_photos" alt="chambre_bleu_blanc">
               <div class="légendes_populaires">
                   <h3>Hôtel Tout bleu et Blanc</h3>
-                  <p>Nuit à partir de 68€</p>
+                  <data value="68"><p>Nuit à partir de 68€</p></data>
                   <img src="logo/4_stars.svg" class="étoiles_pop" alt="quatre_étoiles">
               </div>
             </div>
           </div>        
     </div>  <!-- les_plus_populaires -->
-  </div> <!-- section_1-->
+  </section> <!-- section_1-->
   
   <div id="Activités_à_Marseille">
   
-    <h1>Activités à Marseille</h1>
+    <h2>Activités à Marseille</h2>
 
-    <div id="section_2"> <!--Activités à Marseille-->
+    <section id="section_2"> <!--Activités à Marseille-->
 
         <div class="vignettes_act"><a href="#">
           <div id="box_photo_vieux_port"><img src="activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" id="vieux_photo" alt="bâteaux_dans_Vieux_Port"></div>
@@ -245,38 +246,38 @@
               </a>
           </div>
 
-    </div>
+    </section>
 
   </div>  
-
+</main>
   <footer>
 
-    <div id="zone_textes">
+    <nav id="zone_textes">
 
       <div id="tous_textes">
       
         <div class="textes_et_catégories">
-          <h3>À propos</h3>
+          <h2>À propos</h2>
           <p>Fonctionnement du site</p>
           <p>Conditions générales de vente</p>
           <p>Données et confidentialité</p>
         </div>
 
         <div class="textes_et_catégories">
-          <h3>Nos hébergements</h3>
+          <h2>Nos hébergements</h2>
           <p>Charte qualité</p>
           <p>Soumettre votre hôtel</p>
         </div>
 
         <div class="textes_et_catégories">
-          <h3>Assistance</h3>
+          <h2>Assistance</h2>
           <p>Centre d'aide</p>
           <p>Nous contacter</p>
         </div>
 
       </div>
 
-    </div>
+    </nav>
 
   </footer>
 

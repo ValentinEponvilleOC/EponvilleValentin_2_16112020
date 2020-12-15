@@ -1,8 +1,11 @@
 @font-face {
   font-family: 'Raleway';
-  src: url('static/Raleway-Regular.ttf');
-  src: url('static/Raleway-Bold.ttf');
-}
+  src: url("/Raleway/static/Raleway-Regular.ttf") format("truetype"),
+       url("Raleway/static/Raleway-Bold.ttf") format("truetype");   
+
+  font-family : 'Raleway-Light';
+  src: url("/Raleway/static/Raleway-Light.ttf") format("truetype"); 
+  }
 
 html, body {
   margin: 0;
@@ -10,7 +13,7 @@ html, body {
 }
 
 body { 
-  width: 100%;
+  width: 30em;
   height: auto;
   margin: auto;
   /*border: 2px solid green;*/
@@ -21,11 +24,13 @@ body {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 h1 {
+  font-family: 'Raleway';
   font-size: 1.5em;
+  font-weight: normal;
 }
 
 h2 {
@@ -84,9 +89,11 @@ header {
 #heb_et_act_top_smart {
   display: flex;
   width: 30em;
+  margin-top: 1.5em;
 }
 
 #heb_top_smart {
+  font-family: 'Raleway-Light', sans-serif;
   display: flex; 
   justify-content: center;
   border-bottom: 0.2em solid #F2F2F2;
@@ -100,6 +107,7 @@ header {
 }
 
 #act_top_smart {
+  font-family: 'Raleway-Light', sans-serif;
   display: flex; 
   justify-content: center;
   border-bottom: 0.2em solid #F2F2F2;
@@ -152,14 +160,9 @@ a:visited {
   margin-bottom: 1em;
 }
 
-#haut_gauche h1 {
-  position: relative;
-  border: 1px solid green;
-}
-
 #barre_recherche { /* l'ensemble de la barre */
   display: flex;
-  height: 3.5em; 
+  height: auto; 
   justify-content: center;
 }
 
@@ -179,10 +182,11 @@ a:visited {
   border: 1px solid #F2F2F2;
   text-align: start;
   width: 15em;
+  height: 3em;
   padding-left: 1em;
 }
 
-button { /* l'ensemble du bouton */
+button { /* l'ensemble du bouton de la loupe */
   background-color: #0065FC;
   color: #0065FC;
   width: 3.5em;
@@ -196,7 +200,6 @@ button { /* l'ensemble du bouton */
   align-items: center;
   position: relative;
   right: 2em;
-  
 }
 
 .bouton_1 {
@@ -254,9 +257,10 @@ button { /* l'ensemble du bouton */
   color: white;
 }
 
-#filtre_éco h2 {
+#filtre_éco h3 {
   position: relative;
   left: 1em;
+  font-size: 1em;
 }
 
 .pastille {
@@ -304,9 +308,10 @@ button { /* l'ensemble du bouton */
   color: white;
 }
 
-#filtre_fam h2 {
+#filtre_fam h3 {
   position: relative;
   left: 1em;
+  font-size: 1em;
 }
 
 /* -------------------------------------- filtre_rom */
@@ -332,9 +337,10 @@ button { /* l'ensemble du bouton */
   color: white;
 }
 
-#filtre_rom h2 {
+#filtre_rom h3 {
   position: relative;
   left: 1em;
+  font-size: 1em;
 }
 
 /* -------------------------------------- filtre_anim */
@@ -360,16 +366,17 @@ button { /* l'ensemble du bouton */
   color: white;
 }
 
-#filtre_anim h2 {
+#filtre_anim h3 {
   position: relative;
   left: 1em;
+  font-size: 1em;
 }
 
 /* ------------------------------------------------------------ info */
 
 #info {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   width: 25em;
   /*border: 1px solid red;*/
   margin-top: 2em;
@@ -385,7 +392,6 @@ button { /* l'ensemble du bouton */
 #info p {
   /*border: 1px solid green;*/
   width: auto;
-  position: relative;
   bottom: 1em;
 }
 
@@ -394,6 +400,7 @@ button { /* l'ensemble du bouton */
 #section_1 {
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
   height: auto;
   /*border: 0.25em solid orangered;*/
 }
@@ -407,8 +414,7 @@ button { /* l'ensemble du bouton */
 #hebergements {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   /*border: 1px solid red;*/
   border-radius: 1em;
   padding: 2%;
@@ -417,16 +423,11 @@ button { /* l'ensemble du bouton */
   background-color: white;
 }
 
-#hebergements h1 {
+#hebergements h2 {
   width: auto;
   /*border: 1px solid blue;*/
-  padding-right: 4.5em;
-}
-
-#hebergements h2 {
-/*border: 1px solid brown;*/
-  padding-right: 11em;
-  font-size: 150%;
+  font-size: 1.5em;
+  padding-right: 4em;
 }
 
 #vignettes { /* l'ensemble des vignettes */
@@ -494,7 +495,7 @@ button { /* l'ensemble du bouton */
   border-radius: 0em;
   width: 100%;
   padding-bottom: 2em;
-  padding-top: 1em;
+  padding-top:;
   height: auto;
   /* border: 1px solid blue; */
 }
@@ -515,8 +516,11 @@ button { /* l'ensemble du bouton */
   /* border: 1px solid green; */
 }
 
-#les_plus_populaires h1 {
-  position: relative;
+#les_plus_populaires h2 {
+  width: auto;
+  /*border: 1px solid blue;*/
+  font-size: 1.5em;
+  padding-right: 4em;
 }
 
 .vignette {
@@ -589,8 +593,9 @@ button { /* l'ensemble du bouton */
   height: auto;
 }
 
-#Activités_à_Marseille h1 {
+#Activités_à_Marseille h2 {
   width: auto;
+  font-size: 1.5em;
   padding-right: 7.5em;
 }
 
@@ -728,12 +733,16 @@ footer {
   margin-left: 3em;
   margin-right: 3em;
   height: auto;
+}
 
+#zone_textes h2 {
+  font-size: 1.25em;
 }
 
 #zone_textes p {
   list-style-type: none;
   justify-content: flex-start;
+  font-size: 1em;
   /*border: 1px solid purple;*/
 }
 

@@ -1,8 +1,13 @@
 @font-face {
   font-family: 'Raleway';
-  src: url('static/Raleway-Regular.ttf');
-  src: url('static/Raleway-Bold.ttf');
-}
+  src: url("/Raleway/static/Raleway-Regular.ttf") format("truetype"),
+       url("/Raleway/static/Raleway-Bold.ttf") format("truetype"),
+       url("/Raleway/static/Raleway-Light.ttf") format("truetype");    
+
+  font-family : 'Raleway-Light';
+  src: url("/Raleway/static/Raleway-Light.ttf") format("truetype");    
+  }
+
 
 html, body {
   margin: 0;
@@ -24,7 +29,9 @@ p {
 }
 
 h1 {
+  font-family: 'Raleway';
   font-size: 1.5em;
+  font-weight: normal;
 }
 
 h2 {
@@ -32,7 +39,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.0em;
 }
 
 /* ------------------------------------------------------------------------------ header */
@@ -69,11 +76,6 @@ header {
   margin-bottom: 1em;
 }
 
-#haut_gauche h1 {
-  position: relative;
-  /*border: 1px solid green;*/
-}
-
 #deux_premières_phrases {
   margin-top: 2em;
 }
@@ -92,12 +94,14 @@ header {
 }
 
 #heb_top {
+  font-family: 'Raleway-Light', sans-serif;
   display: flex; 
   justify-content: center;
   align-items: flex-end;
   width: 10em;  
   height: 5em;
   border-top: 0.15em solid white;  
+  
 }
 
 #heb_top:hover {
@@ -107,6 +111,7 @@ header {
 }
 
 #act_top {
+  font-family: 'Raleway-Light', sans-serif;
   display: flex; 
   justify-content: center;
   align-items: flex-end;
@@ -146,12 +151,13 @@ a:visited {
 
 #barre_recherche {
   display: flex;
-  height: 2.75em; 
+  height: 3em; 
 }
 
 #marker {
   background-color: #F2F2F2;
   width: 1em;
+  height: 3em;
   padding-right: 1em;
   padding-left: 1em;
   border-top-left-radius: 1em;
@@ -164,12 +170,14 @@ a:visited {
   font-size: 1em;
   border: 1px solid #F2F2F2;
   text-align: center;
+  height: 2.75em;
 }
 
 button {
   background-color: #0065FC;
   color: white;
   width: 7.5em;
+  height: 3em;
   border-top-right-radius: 0.75em;
   border-bottom-right-radius: 0.75em;
   border: white;
@@ -222,7 +230,7 @@ button {
   color: white;
 }
 
-#filtre_éco h2 {
+#filtre_éco h3 {
   position: relative;
   left: 1em;
 }
@@ -271,7 +279,7 @@ button {
   color: white;
 }
 
-#filtre_fam h2 {
+#filtre_fam h3 {
   position: relative;
   left: 1em;
 }
@@ -299,7 +307,7 @@ button {
   color: white;
 }
 
-#filtre_rom h2 {
+#filtre_rom h3 {
   position: relative;
   left: 1em;
 }
@@ -328,7 +336,7 @@ button {
   color: white;
 }
 
-#filtre_anim h2 {
+#filtre_anim h3 {
   position: relative;
   left: 1em;
 }
@@ -367,11 +375,8 @@ button {
   padding: 2%;
 }
 
-#hebergements h1 {
-  position: relative;
-}
-
 #hebergements h2 {
+  position: relative;
   font-size: 1.25em;
 }
 
@@ -464,8 +469,9 @@ button {
   /*border: 1px solid green;*/ 
 }
 
-#les_plus_populaires h1 {
+#les_plus_populaires h2 {
   position: relative;
+  font-size: 1.25em;
 }
 
 .vignette {
@@ -514,8 +520,9 @@ button {
   margin-top: 52em;
 }
 
-#Activités_à_Marseille h1 {
+#Activités_à_Marseille h2 {
   margin-left: 0.5em;
+  font-size: 1.25em;
 }
 
 #section_2 {
