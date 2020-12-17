@@ -544,24 +544,11 @@ footer {
   background-color: #F2F2F2;
 }
 
-#zone_textes {
-  /* border: 1px solid blue; */
-  display: flex;
-  align-items: center;
-  margin-left: 3em;
-  width: 65em;
-
-}
-
-#zone_textes p {
-  list-style-type: none;
-  justify-content: flex-start;
-  /* border: 1px solid purple; */
-}
-
 #tous_textes {
   display: flex;
   width: 65em;
   /* border: 1px solid orange; */
   justify-content: space-between;
+  margin-left: 3em;
+  margin-top: 2em;
 }

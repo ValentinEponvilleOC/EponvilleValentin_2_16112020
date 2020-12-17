@@ -574,21 +574,13 @@ button {
 
 footer {
   display: flex;
+  align-items: flex-start;
   margin: 0;
-  /*border: 1px solid red;*/ 
+  /*border: 1px solid red;*/
   margin-top: 2em;
   height: 25em;
-  width: auto;
-  background-color: #F2F2F2;
-}
-
-#zone_textes {
-  display: flex;
-  justify-content: center; 
-  margin: 0;
-  /*border: 2px solid blue;*/
   width: 768px;
-  height: 25em;
+  background-color: #F2F2F2
 }
 
 .textes_et_catégories {
@@ -601,11 +593,11 @@ footer {
 
 #tous_textes {
   display: flex;
-  width: 150%;
-  height: 25em;
-  /*border: 1px solid orange;*/
+  width: auto;
   margin-left: 5em;
   margin-right: 5em;
+  height: 25em;
+  /*border: 1px solid orange;*/
   flex-wrap: wrap;
   justify-content: space-between;
 }

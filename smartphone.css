@@ -724,25 +724,8 @@ footer {
   width: auto;
 }
 
-#zone_textes {
-  /*border: 1px solid blue;*/
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-left: 3em;
-  margin-right: 3em;
-  height: auto;
-}
-
 #zone_textes h2 {
   font-size: 1.25em;
-}
-
-#zone_textes p {
-  list-style-type: none;
-  justify-content: flex-start;
-  font-size: 1em;
-  /*border: 1px solid purple;*/
 }
 
 #tous_textes {
@@ -753,4 +736,5 @@ footer {
   justify-content: space-between;
   align-items: start;
   height: auto;
+  margin-left: 3em;
 }
