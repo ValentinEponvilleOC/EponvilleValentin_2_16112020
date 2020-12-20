@@ -9,7 +9,7 @@ src: url("/Raleway/static/Raleway-Light.ttf") format("truetype");
 
 body { 
 font-family: 'Raleway';
-width: 1400px;
+width: 1366px;
 margin: auto;
 display: flex;
 flex-direction: column;
