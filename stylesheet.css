@@ -76,10 +76,8 @@ flex-direction: column;
 
 #haut_droite {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
-  width: 20em;
-  padding-right: 5em;
 }
 
 #heb_top {
@@ -126,6 +124,10 @@ a:visited {
 
 #sinscrire {
   font-family: 'Raleway';
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; 
+  height: 5em;
   font-weight: bold;
   color: #0065FC;
   padding-left: 1em;
@@ -170,7 +172,7 @@ button {
   font-weight: bold;
 }
 
-.bouton_2 {
+.bouton_2 { /* loupe */
   display: none;
 }
 

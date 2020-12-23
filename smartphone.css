@@ -7,20 +7,15 @@
   src: url("/Raleway/static/Raleway-Light.ttf") format("truetype"); 
   }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
 body { 
-  width: 30em;
+  width: 375px;
   height: auto;
   margin: auto;
-  /*border: 2px solid green;*/
+  border: 2px solid green;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: 'Raleway';
-  
 }
 
 p {
@@ -54,14 +49,15 @@ header {
 
 #tout_sauf_top {
   /*border: 1px solid green;*/
-  width: auto;
+  width: 375px;
   height: 40em;
 }
 
 #top {
   display: flex;
   justify-content: space-between;
-  width: 25em;
+  align-items: flex-end;
+  width: 375px;
   /*border: 1px solid purple;*/
 }
 
@@ -78,7 +74,6 @@ header {
 #haut_droite {
   /*border: 0.25em solid red;*/
   display: flex;
-  width: 5em;
 }
 
 #logo {
@@ -88,8 +83,10 @@ header {
 
 #heb_et_act_top_smart {
   display: flex;
-  width: 30em;
+  width: 375px;
   margin-top: 1.5em;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 #heb_top_smart {
@@ -97,12 +94,12 @@ header {
   display: flex; 
   justify-content: center;
   border-bottom: 0.2em solid #F2F2F2;
-  width: 15em;     
+  width: 12em;     
 }
 
 #heb_top_smart:hover {
   border-bottom: 0.2em solid #0065FC;
-  width: 15em;
+  width: 12em;
   color: #0065FC;
 }
 
@@ -111,12 +108,12 @@ header {
   display: flex; 
   justify-content: center;
   border-bottom: 0.2em solid #F2F2F2;
-  width: 15em;
+  width: 12em;
 }
 
 #act_top_smart:hover {
   border-bottom: 0.2em solid #0065FC;
-  width: 15em;
+  width: 12em;
   color: #0065FC;
 }
 
@@ -142,7 +139,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 20em;
+  width: auto;
   /*border: 1px solid red;*/
   margin-bottom: 2em;
 }
@@ -377,7 +374,7 @@ button { /* l'ensemble du bouton de la loupe */
 #info {
   display: flex;
   align-items: center;
-  width: 25em;
+  width: auto;
   /*border: 1px solid red;*/
   margin-top: 2em;
   height: 3em;
@@ -402,6 +399,7 @@ button { /* l'ensemble du bouton de la loupe */
   flex-direction: column-reverse;
   align-items: center;
   height: auto;
+  width: 375px;
   /*border: 0.25em solid orangered;*/
 }
 
@@ -415,12 +413,12 @@ button { /* l'ensemble du bouton de la loupe */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /*border: 1px solid red;*/
-  border-radius: 1em;
-  padding: 2%;
+  border: 1px solid red;
+
   margin-top: 1em;
   height: auto;
   background-color: white;
+  width: 375px;
 }
 
 #hebergements h2 {
@@ -435,7 +433,7 @@ button { /* l'ensemble du bouton de la loupe */
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: auto;
+  width: 375px;
   height: 100em;
   /*border: 1px solid purple;*/
 }
@@ -443,24 +441,24 @@ button { /* l'ensemble du bouton de la loupe */
 .fond { 
   background-color: white;
   border-radius: 1em;
-  width: 25em;
+  width: 375px;
   height: 15em;
-  padding: 0.25em;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
+  border: 1px solid blue;
 }
 
 .box_photo {
   overflow: hidden;
-  width: 25em;
+  width: 375px;
   height: 9em;
   border-top-left-radius: 1em; border-top-right-radius: 1em;
   /*border: 1px solid orangered;*/
 }
 
 .photo_hébergements {
-  width: 25em;
+  width: 375px;
   height: 10em;
   border-top-left-radius: 1em; border-top-right-radius: 1em;
   /*border: 1px solid green;*/
@@ -493,7 +491,7 @@ button { /* l'ensemble du bouton de la loupe */
   align-items: center;
   background-color: #F2F2F2;
   border-radius: 0em;
-  width: 100%;
+  width: 375px;
   padding-bottom: 2em;
   height: auto;
   /* border: 1px solid blue; */
@@ -504,6 +502,7 @@ button { /* l'ensemble du bouton de la loupe */
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 375px;
   /* border: 1px solid red; */
   height: 600px;
 }
@@ -511,7 +510,8 @@ button { /* l'ensemble du bouton de la loupe */
 #titre_chart { /* titre + icône graphique */
   display: flex;
   justify-content: space-between;
-  width: 403px;
+  align-items: center;
+  width: 375px;
   /* border: 1px solid green; */
 }
 
@@ -528,7 +528,7 @@ button { /* l'ensemble du bouton de la loupe */
   border-radius: 1em;
   background-color: white;
   height: 11.5em;
-  width: 25em;
+  width: 375px;
   box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
   /*border: 0.2em solid green;*/
 }
@@ -578,6 +578,7 @@ button { /* l'ensemble du bouton de la loupe */
   justify-content: space-between;
   /*border: 0.25em solid red;*/
   height: 100em;
+  width: 375px;
 }
 
 /* ------------------------------------------------------------ activités */
@@ -588,6 +589,7 @@ button { /* l'ensemble du bouton de la loupe */
   justify-content: flex-start;
   align-items: center;
   margin-top: 2em;
+  width: 375px;
   /*border: 0.25em solid pink;*/
   height: auto;
 }
@@ -625,7 +627,7 @@ button { /* l'ensemble du bouton de la loupe */
 }
 
 #section_2 .box_photo {
-  width: 25em;
+  width: 375px;
   height: 10.5em;
   border-top-left-radius: 1em; border-top-right-radius: 1em;
   /*border: 1px solid orangered;*/
@@ -639,7 +641,7 @@ button { /* l'ensemble du bouton de la loupe */
 
 #box_photo_vieux_port_smart {
   overflow: hidden;
-  width: 25em;
+  width: 375px;
   height: 10.5em;
   border-top-left-radius: 1em; border-top-right-radius: 1em;
   /*border: 1px solid orangered;*/
@@ -653,7 +655,7 @@ button { /* l'ensemble du bouton de la loupe */
 
 #box_photo_calanques_smart {
   overflow: hidden;
-  width: 25em;
+  width: 375px;
   height: 10.5em;
   border-top-left-radius: 1em; border-top-right-radius: 1em;
   /*border: 1px solid orangered;*/
@@ -673,14 +675,14 @@ button { /* l'ensemble du bouton de la loupe */
   display: flex;
   flex-direction: column;
   border-radius: 1em;
-  width: 25em;
+  width: 375px;
   height: 15em;
   box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
   /*border: 0.25em solid blue;*/
 }
 
 .vignettes_act img {
-  width: 20em;
+  width: 375px;
   bottom: 10em;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
@@ -694,7 +696,7 @@ button { /* l'ensemble du bouton de la loupe */
   display: flex;
   flex-direction: column;
   border-radius: 1em;
-  width: 25em;
+  width: 375px;
   height: 15em;
   box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 25%);
   /*border: 0.25em solid blue;*/
